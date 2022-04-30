@@ -89,7 +89,7 @@
     <string name="lbl_subtotal">Subtotal</string>
     <string name="lbl_shipping_charge">Cargos por envio</string>
     <string name="lbl_total_amount">Total </string>
-    <string name="btn_lbl_checkout">Finalizar</string>
+    <string name="btn_lbl_checkout">Checkout</string>
     <string name="action_cart">Carrito</string>
     <string name="lbl_text_out_of_stock">NO HAY STOCK</string>
     <string name="msg_item_removed_successfully">Prenda eliminada del Carrito </string>
@@ -122,9 +122,9 @@
     <string name="title_checkout">CONFIRMAR</string>
     <string name="checkout_lbl_product_items">Items</string>
     <string name="checkout_lbl_selected_address"> Direccion</string>
-    <string name="txtcosto">Costo</string>
-    <string name="txtMetodopago">Metodo de pago</string>
-    <string name="txtContraentrega">Contraentrega</string>
+    <string name="checkout_lbl_items_receipt">Items</string>
+    <string name="lbl_payment_mode">Metodo de pago</string>
+    <string name="lbl_cash_on_delivery">Contraentrega</string>
     <string name="btn_lbl_place_order">Orden</string>
     <string name="no_order_placed_yet">Todavia no hay orden de compra!</string>
 

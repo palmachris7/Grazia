@@ -32,7 +32,7 @@ open class MyOrdersListAdapter(private val context: Context,
         holder.binding.tvItemName.text = model.title
         holder.binding.tvItemPrice.text = "S/.${model.total_amount}"
 
-//        holder.binding.ibDeleteProduct.visibility = View.GONE
+        holder.binding.ibDeleteProduct.visibility = View.GONE
 
         holder.itemView.setOnClickListener{
             val intent = Intent(context,MyOrderDetailsActivity::class.java)

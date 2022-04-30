@@ -145,6 +145,7 @@ class FireStoreClass {
 
     fun getProductList(fragment: Fragment) {
         mFireStore.collection(Constantes.PRODUCTOS)
+            .whereEqualTo(Constantes.USER_ID, getCurrentUserId())
             .get()
             .addOnSuccessListener { document ->
                 Log.i("Prenda List ::", document.documents.toString())

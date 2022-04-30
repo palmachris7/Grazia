@@ -286,7 +286,7 @@
                 android:layout_marginBottom="@dimen/my_order_details_content_marginTopBottom"
                 android:paddingTop="@dimen/my_order_details_content_lbl_padding"
                 android:paddingBottom="@dimen/my_order_details_content_lbl_padding"
-                android:text="@string/txtcosto"
+                android:text="@string/checkout_lbl_items_receipt"
                 android:textColor="@color/colorSecondaryText"
                 android:textSize="@dimen/my_order_details_lbl_textSize" />
 
