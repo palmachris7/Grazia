@@ -56,13 +56,13 @@ class FireStoreClass {
                 if (user != null) {
 
                     val sharedPref = activity.getSharedPreferences(
-                        Constantes.MY_SHOP_PAL_PREFERENCES,
+                        Constantes.GRAZIA_PREFER,
                         Context.MODE_PRIVATE
                     )
 
                     val editor: SharedPreferences.Editor = sharedPref.edit()
                     editor.putString(
-                        Constantes.LOGGED_IN_USERNAME,
+                        Constantes.USUARIO_LOGUEADO,
                         "${user.firstName} ${user.lastName}"
                     )
                     editor.apply()

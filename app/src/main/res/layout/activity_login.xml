@@ -104,7 +104,7 @@
         android:layout_marginEnd="16dp"
         android:foreground="?attr/selectableItemBackground"
         android:padding="@dimen/clickable_text_view_padding"
-        android:text="@string/lbl_forgot_password"
+        android:text="@string/txt_olvidcon"
         android:textSize="@dimen/forgot_password_textSize"
         android:textColor="@color/colorSecondaryText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -124,7 +124,7 @@
         android:paddingTop="@dimen/btn_padding"
         android:foreground="?attr/selectableItemBackground"
         android:paddingBottom="@dimen/btn_padding"
-        android:text="@string/btn_lbl_login"
+        android:text="@string/txt_login"
         tools:targetApi="m"
         tools:ignore="UnusedAttribute"
         android:layout_gravity="center"
@@ -151,7 +151,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="1.5dp"
             android:padding="@dimen/clickable_text_view_padding"
-            android:text="@string/don_t_have_an_account"
+            android:text="@string/txtnocuenta"
             android:textColor="@color/colorSecondaryText"
             android:textSize="@dimen/lbl_text_view_textSize"/>
 

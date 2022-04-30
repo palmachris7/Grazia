@@ -238,7 +238,7 @@
                     android:layout_height="wrap_content"
                     android:foreground="?attr/selectableItemBackground"
                     android:padding="@dimen/clickable_text_view_padding"
-                    android:text="@string/login"
+                    android:text="@string/txt_login"
                     android:textColor="@color/colorSecondaryText"
                     android:textSize="@dimen/lbl_text_view_textSize"
                     tools:ignore="UnusedAttribute" />
