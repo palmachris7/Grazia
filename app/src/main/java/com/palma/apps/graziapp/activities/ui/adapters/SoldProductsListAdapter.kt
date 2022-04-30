@@ -45,7 +45,7 @@ open class SoldProductsListAdapter(
         holder.binding.tvItemName.text = model.title
         holder.binding.tvItemPrice.text = "S/.${model.price}"
 
-        holder.binding.ibDeleteProduct.visibility = View.GONE
+//        holder.binding.ibDeleteProduct.visibility = View.GONE
 
         holder.itemView.setOnClickListener{
             val intent = Intent(context,SoldProductDetailsActivity::class.java)

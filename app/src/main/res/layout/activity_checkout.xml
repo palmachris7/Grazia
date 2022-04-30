@@ -156,7 +156,7 @@
                 android:layout_marginBottom="@dimen/checkout_content_marginTopBottom"
                 android:paddingTop="@dimen/checkout_content_lbl_padding"
                 android:paddingBottom="@dimen/checkout_content_lbl_padding"
-                android:text="@string/checkout_lbl_items_receipt"
+                android:text="@string/txtcosto"
                 android:textColor="@color/colorSecondaryText"
                 android:textSize="@dimen/checkout_lbl_textSize" />
 
@@ -265,7 +265,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/lbl_payment_mode"
+                android:text="@string/txtMetodopago"
                 android:textColor="@color/colorDarkGrey"
                 android:textSize="@dimen/checkout_label_value_textSize" />
 
@@ -273,7 +273,7 @@
                 android:id="@+id/tv_payment_mode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/lbl_cash_on_delivery"
+                android:text="@string/txtContraentrega"
                 android:textAlignment="center"
                 android:textColor="@color/colorDarkGrey"
                 android:textSize="@dimen/checkout_label_value_textSize"

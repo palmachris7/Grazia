@@ -36,9 +36,9 @@ open class ListaProductosAdapter (
         holder.binding.tvItemName.text = model.title
         holder.binding.tvItemPrice.text = "S/. ${model.price}"
 
-        holder.binding.ibDeleteProduct.setOnClickListener{
+       /* holder.binding.ibDeleteProduct.setOnClickListener{
             fragment.deleteProduct(model.product_id)
-        }
+        }*/
 
         holder.itemView.setOnClickListener{
             val intent = Intent(context,DetalleProductoActivity::class.java)
