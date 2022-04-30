@@ -480,7 +480,7 @@ class FireStoreClass {
             //crear un document reference
             val documentReference = mFireStore.collection(Constantes.PRENDAS_CARRITOS)
                 .document(cartItem.id)
-            //this is the benefit of using batch we can do multiple things at a time.
+
             writeBatch.delete(documentReference)
         }
 
@@ -494,7 +494,7 @@ class FireStoreClass {
             }
     }
 
-    //get the order list for order fragments
+
     fun getMyOrderList(fragment: OrdersFragment) {
         mFireStore.collection(Constantes.ORDERS)
             .whereEqualTo(Constantes.USER_ID, getCurrentUserId())

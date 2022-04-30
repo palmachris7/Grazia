@@ -80,7 +80,7 @@ class CheckoutActivity : BaseActivity() {
                 "Orden: ${System.currentTimeMillis()}",
                 mCartItemsList[0].image,
                 mSubTotal.toString(),
-                "7.00",
+                "10.00",
                 mTotalAmount.toString(),
                 System.currentTimeMillis()
             )
@@ -153,7 +153,7 @@ class CheckoutActivity : BaseActivity() {
     }
     fun allDetailsUpdatedSuccessfully(){
         hideProgressDialog()
-        Toast.makeText(this, "Your order was placed successfully.", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Tu orden se realizó correctamente.", Toast.LENGTH_SHORT).show()
 
         val intent = Intent(this@CheckoutActivity,DashboardActivity::class.java)
         //to clear the stack of activities or layer of activities and open the dashboard activity
