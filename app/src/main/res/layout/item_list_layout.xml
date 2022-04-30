@@ -62,7 +62,7 @@
             tools:text="S/. 100.00" />
     </LinearLayout>
 
-    <ImageButton
+    <!-- <ImageButton
         android:id="@+id/ib_delete_product"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,6 +74,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ll_product_details"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent"/>-->
     <!--END-->
 </androidx.constraintlayout.widget.ConstraintLayout>

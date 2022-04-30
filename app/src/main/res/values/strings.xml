@@ -89,7 +89,7 @@
     <string name="lbl_subtotal">Subtotal</string>
     <string name="lbl_shipping_charge">Cargos por envio</string>
     <string name="lbl_total_amount">Total </string>
-    <string name="btn_lbl_checkout">Checkout</string>
+    <string name="btn_lbl_checkout">Finalizar</string>
     <string name="action_cart">Carrito</string>
     <string name="lbl_text_out_of_stock">NO HAY STOCK</string>
     <string name="msg_item_removed_successfully">Prenda eliminada del Carrito </string>
