@@ -62,7 +62,7 @@ class LoginActivity : BaseActivity() , View.OnClickListener {
                     }
                 }.addOnFailureListener { exception ->
                     hideProgressDialog()
-                    Toast.makeText(this@LoginActivity, exception.message, Toast.LENGTH_SHORT).show()
+                 //  Toast.makeText(this@LoginActivity, exception.message, Toast.LENGTH_SHORT).show()
                 }
         }
     }
