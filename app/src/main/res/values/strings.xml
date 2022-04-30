@@ -44,7 +44,7 @@
     <!--    <string name="title_activity_dashboard">MainActivity</string>-->
     <string name="title_dashboard">Principal</string>
     <string name="please_press_back_again_to_exit">Presione nuevamente para salir</string>
-    <string name="title_orders">Orden</string>
+    <string name="title_orders">Orden de envio</string>
     <string name="title_products">Catalogo</string>
     <string name="title_settings">Cuenta</string>
     <string name="lbl_edit">Editar</string>

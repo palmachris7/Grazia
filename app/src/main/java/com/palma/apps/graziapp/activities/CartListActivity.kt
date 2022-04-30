@@ -118,7 +118,7 @@ class CartListActivity : BaseActivity() {
             }
             binding.tvSubTotal.text = "S/. ${subTotal}"
             //Change the logic accordingly
-            binding.tvShippingCharge.text = "S/. ${7}"
+            binding.tvShippingCharge.text = "S/. ${10}"
 
             if (subTotal >0 ){
                 binding.llCheckout.visibility = View.VISIBLE
