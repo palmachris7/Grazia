@@ -61,10 +61,10 @@ class DashboardFragment : BaseFragment() {
                 startActivity(Intent(activity, SettingsActivity::class.java))
                 return true
             }
-            R.id.action_cart->{
+          /*  R.id.action_cart->{
                 startActivity(Intent(activity,CartListActivity::class.java))
                 return true
-            }
+            }*/
         }
         return super.onOptionsItemSelected(item)
     }

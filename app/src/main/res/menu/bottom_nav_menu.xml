@@ -11,11 +11,11 @@
         android:icon="@drawable/ic_sharp_filter_list"
         android:title="@string/title_products" />
 
-    <item
+   <!-- <item
         android:id="@+id/navigation_orders"
         android:icon="@drawable/ic_akar_icons_shopping_bag"
         android:title="@string/title_orders" />
-
+-->
     <item
         android:id="@+id/navigation_sold_products"
         android:icon="@drawable/ic_vector_sold_products"
