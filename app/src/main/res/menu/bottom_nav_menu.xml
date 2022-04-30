@@ -20,12 +20,12 @@
         android:id="@+id/navigation_sold_products"
         android:icon="@drawable/ic_vector_sold_products"
         android:title="@string/tituloprdven" />
-    <item
+  <!--  <item
         android:id="@+id/action_cuenta"
         android:icon="@drawable/ic_bi_person"
         android:title="@string/title_settings"
 
-        />
+        />-->
 
 
 </menu>
