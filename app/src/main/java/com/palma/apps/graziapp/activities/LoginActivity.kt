@@ -53,16 +53,15 @@ class LoginActivity : BaseActivity() , View.OnClickListener {
                     
                     } else {
                         hideProgressDialog()
-/*                        Toast.makeText(
+                        Toast.makeText(
                             this@LoginActivity,
                             task.exception!!.message,
                             Toast.LENGTH_SHORT
-                        ).show()*/
-                        showErrorSnackBar("Correo o Contraseña invalido.",true)
+                        ).show()
                     }
                 }.addOnFailureListener { exception ->
                     hideProgressDialog()
-                 //  Toast.makeText(this@LoginActivity, exception.message, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@LoginActivity, exception.message, Toast.LENGTH_SHORT).show()
                 }
         }
     }
