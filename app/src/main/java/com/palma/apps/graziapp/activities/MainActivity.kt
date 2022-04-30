@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val sharedPref = getSharedPreferences(Constantes.GRAZIA_PREFER, Context.MODE_PRIVATE)
-        val userName = sharedPref.getString(Constantes.USUARIO_LOGUEADO,"Hola")
+        val sharedPref = getSharedPreferences(Constantes.MY_SHOP_PAL_PREFERENCES, Context.MODE_PRIVATE)
+        val userName = sharedPref.getString(Constantes.LOGGED_IN_USERNAME,"Hola")
 
         binding.userName.text = userName.toString()
     }

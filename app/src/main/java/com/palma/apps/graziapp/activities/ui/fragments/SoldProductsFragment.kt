@@ -12,7 +12,11 @@ import com.palma.apps.graziapp.firestore.FireStoreClass
 import com.palma.apps.graziapp.modelos.Vendidos
 
 
-
+/**
+ * A simple [Fragment] subclass.
+ * Use the [SoldProductsFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ */
 class SoldProductsFragment : BaseFragment() {
     private var _binding: FragmentSoldProductsBinding? = null
 

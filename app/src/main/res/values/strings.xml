@@ -6,9 +6,9 @@
     <string name="titulo_login">LOGIN</string>
     <string name="txt_email_id">Email</string>
     <string name="txt_password">Contraseña</string>
-    <string name="txt_olvidcon">Olvidaste tu Contraseña?</string>
-    <string name="txt_login">Login</string>
-    <string name="txtnocuenta">No tienes cuenta?</string>
+    <string name="lbl_forgot_password">Olvidaste tu Contraseña?</string>
+    <string name="btn_lbl_login">Login</string>
+    <string name="don_t_have_an_account">No tienes cuenta?</string>
     <string name="txtRegistrarse"><u>Registrarse</u></string>
 
     <!--Actividad Registrar-->
@@ -19,6 +19,7 @@
     <string name="txtTermsyConds">Estoy de acuerdo con los <u> Terminos &amp; Condiciones </u></string>
     <string name="txtRegistrar">Registrar</string>
     <string name="txt_yatengocta">Ya tienes una Cuenta?</string>
+    <string name="login"><u>Login</u></string>
     <string name="txtEspere">Espere…</string>
 
     <!-- password-->
@@ -142,5 +143,4 @@
     <string name="txtnoprodvend">Todavia no hay productos vendidos!</string>
 
     <string name="txtDetalledelprodVend">Detalle de productos vendidos</string>
-    <string name="item">Item</string>
 </resources>

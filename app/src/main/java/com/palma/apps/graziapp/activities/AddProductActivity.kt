@@ -152,8 +152,8 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
 
     private fun uploadProductDetails(){
 
-        val shared = getSharedPreferences(Constantes.GRAZIA_PREFER,Context.MODE_PRIVATE)
-        val userName = shared.getString(Constantes.USUARIO_LOGUEADO,"")
+        val shared = getSharedPreferences(Constantes.MY_SHOP_PAL_PREFERENCES,Context.MODE_PRIVATE)
+        val userName = shared.getString(Constantes.LOGGED_IN_USERNAME,"")
 
 
         val productDetails = Prenda(

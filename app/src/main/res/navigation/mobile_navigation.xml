@@ -28,10 +28,4 @@
         android:name="com.palma.apps.graziapp.activities.ui.fragments.SoldProductsFragment"
         android:label="@string/tituloprdven"
         tools:layout="@layout/fragment_sold_products" />
-
-    <fragment
-        android:id="@+id/action_cuenta"
-        android:name="com.palma.apps.graziapp.activities.ui.fragments.BaseFragment"
-        android:label="@string/tituloprdven"
-        tools:layout="@layout/fragment_sold_products" />
 </navigation>

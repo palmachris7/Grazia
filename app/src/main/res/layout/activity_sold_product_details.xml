@@ -362,11 +362,11 @@
                         android:id="@+id/tv_order_details_total_amount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
                         android:textAlignment="center"
                         android:textColor="@color/colorDarkGrey"
                         android:textSize="@dimen/my_order_details_label_value_textSize"
-                        tools:text="S/. 110" />
+                        tools:text="$110"
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
             </LinearLayout>
 

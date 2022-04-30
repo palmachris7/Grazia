@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.*
 import androidx.recyclerview.widget.GridLayoutManager
 import com.palma.apps.graziapp.R
+import com.palma.apps.graziapp.activities.CartListActivity
 import com.palma.apps.graziapp.activities.DetalleProductoActivity
 import com.palma.apps.graziapp.activities.SettingsActivity
 import com.palma.apps.graziapp.activities.ui.adapters.DashboardItemsListAdapter
@@ -18,7 +19,8 @@ class DashboardFragment : BaseFragment() {
 //    private lateinit var dashboardViewModel: DashboardViewModel
     private var _binding: FragmentDashboardBinding? = null
 
-
+    // This property is only valid between onCreateView and
+    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,10 +61,10 @@ class DashboardFragment : BaseFragment() {
                 startActivity(Intent(activity, SettingsActivity::class.java))
                 return true
             }
-          /*  R.id.action_cart->{
+            R.id.action_cart->{
                 startActivity(Intent(activity,CartListActivity::class.java))
                 return true
-            }*/
+            }
         }
         return super.onOptionsItemSelected(item)
     }
