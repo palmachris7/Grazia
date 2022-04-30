@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">Grazia</string>
+
+    <!-- Actividad Login -->
+    <string name="imagen">imagen</string>
+    <string name="titulo_login">LOGIN</string>
+    <string name="txt_email_id">Email</string>
+    <string name="txt_password">Contraseña</string>
+    <string name="lbl_forgot_password">Olvidaste tu Contraseña?</string>
+    <string name="btn_lbl_login">Login</string>
+    <string name="don_t_have_an_account">No tienes cuenta?</string>
+    <string name="txtRegistrarse"><u>Registrarse</u></string>
+
+    <!--Actividad Registrar-->
+    <string name="crear_cuenta">CREAR CUENTA</string>
+    <string name="txtNombres">Nombres</string>
+    <string name="txt_Apellidos">Apellidos</string>
+    <string name="txt_ConfirmarApellido">Confirmar Contraseña</string>
+    <string name="txtTermsyConds">Estoy de acuerdo con los <u> Terminos &amp; Condiciones </u></string>
+    <string name="txtRegistrar">Registrar</string>
+    <string name="txt_yatengocta">Ya tienes una Cuenta?</string>
+    <string name="login"><u>Login</u></string>
+    <string name="txtEspere">Espere…</string>
+
+    <!-- password-->
+    <string name="btn_lbl_agregar">Agregar</string>
+    <string name="txtOlvidePwd">OLVIDE MI CONTRASEÑA</string>
+    <string name="OlvidePwdDescrip">Ingrese su  e-mail y te enviaremos un link para recuperar la contraseña</string>
+    <string name="emailenv">Email enviado correctamente, siga los pasos!</string>
+
+    <!-- Actividad Usuario  -->
+    <string name="titulocompletarperfil">COMPLETAR PERFIL</string>
+    <string name="txtNumerocel">Numero de Celular</string>
+    <string name="label_hombre">Hombre </string>
+    <string name="label_mujer">Mujer</string>
+    <string name="txtGuardar">Guardar</string>
+    <string name="read_storage_permission_denied">Tienes que dar permisos a la aplicacion¡¡¡.</string>
+    <string name="image_selection_failed">Algo salió mal</string>
+
+    <string name="error_mobile_number">Por favor ingrese un numero</string>
+
+    <string name="profile_update_success_message">Perfil actualizado correctamente</string>
+
+    <!--    <string name="title_activity_dashboard">MainActivity</string>-->
+    <string name="title_dashboard">Principal</string>
+    <string name="please_press_back_again_to_exit">Presione nuevamente para salir</string>
+    <string name="title_orders">Orden</string>
+    <string name="title_products">Catalogo</string>
+    <string name="title_settings">Cuenta</string>
+    <string name="lbl_edit">Editar</string>
+    <string name="lbl_addresses">Direccion</string>
+    <string name="btn_lbl_logout">Salir</string>
+    <string name="edit_profile">Editar Perfil </string>
+    <string name="add_product">Agregar Producto</string>
+
+    <!-- Agregar producto activity -->
+    <string name="title_add_product">Agregar Prenda</string>
+    <string name="et_hint_product_title">Nombre de la Prenda</string>
+    <string name="et_hint_product_price">Precio de la  Prenda (S/)</string>
+    <string name="et_hint_product_description"> Descripcion</string>
+    <string name="et_hint_product_quantity"> Cantidad</string>
+    <string name="error_message_product_image">Seleccione una imagen de una prenda</string>
+    <string name="error_message_product_title">Por favor  escriba algo</string>
+    <string name="error_message_product_quantity">Por favor  escriba algo</string>
+    <string name="error_message_product_description">Por favor  escriba algo</string>
+    <string name="error_message_product_price">Por favor indique el precio</string>
+    <string name="product_upload_success_message">La prenda fue agregada a la base de datos</string>
+    <string name="no_products_added_yet">Todavia no agregó Prendas!</string>
+    <string name="no_dashboard_item_found">No hay Prendas!</string>
+
+    <string name="hello_blank_fragment">Hola!</string>
+    <string name="product_delete_success">La prenda fue eliminada satisfactoriamente.</string>
+    <string name="delete_dialog_title">Eliminar</string>
+    <string name="delete_dialog_message">Estás seguro de eliminar la prenda?</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+
+    <!--Detalles producto activity-->
+    <string name="title_product_detail">DETALLE PRENDA</string>
+    <string name="lbl_product_description"> Descripcion</string>
+    <string name="lbl_product_detail_stock_quantity">Stock </string>
+    <string name="btn_lbl_add_to_cart">AGREGAR AL CARRITO</string>
+    <string name="success_message_item_added_in_cart">La Prenda fue agregada al Carrito.</string>
+    <string name="btn_lbl_go_to_cart">IR AL CARRITO</string>
+
+    <!-- Carrito strings -->
+    <string name="title_my_cart">CARRITO DE COMPRAS</string>
+    <string name="no_cart_item_found">No hay prendas en tu carrito!</string>
+    <string name="lbl_subtotal">Subtotal</string>
+    <string name="lbl_shipping_charge">Cargos por envio</string>
+    <string name="lbl_total_amount">Total </string>
+    <string name="btn_lbl_checkout">Checkout</string>
+    <string name="action_cart">Carrito</string>
+    <string name="lbl_text_out_of_stock">NO HAY STOCK</string>
+    <string name="msg_item_removed_successfully">Prenda eliminada del Carrito </string>
+
+    <!-- Direccion -->
+    <string name="title_address_list">LISTA DE DIRECCIONES</string>
+    <string name="no_address_found">No hay Direcciones</string>
+    <string name="lbl_add_address">Agregar Direcciones</string>
+
+    <!-- Add Direccion -->
+    <string name="title_add_address">AGREGAR DIRECCION</string>
+    <string name="hint_full_name">Nombre completo</string>
+    <string name="hint_phone_number">Celular</string>
+    <string name="hint_address">Direccion</string>
+    <string name="hint_zip_code">Numero</string>
+    <string name="hint_additional_note">Referencia </string>
+    <string name="lbl_home">CASA</string>
+    <string name="lbl_office">OFICINA</string>
+    <string name="lbl_other">OTRO</string>
+    <string name="hint_other_details">Preguntar por</string>
+    <string name="address_added_success_msg">Direccion fue actualizada correctamente</string>
+
+    <string name="title_edit_address">EDITAR DIRECCION</string>
+    <string name="btn_lbl_update">ACTUALIZAR</string>
+    <string name="msg_your_address_updated_successfully">La direccion fue actualizada.</string>
+    <string name="error_message_address_deleted_successfully">La direccion fue eliminada.</string>
+    <string name="select_address">SELECCIONAR  DIRECCION</string>
+
+    <!-- Confirmar activity -->
+    <string name="title_checkout">CONFIRMAR</string>
+    <string name="checkout_lbl_product_items">Items</string>
+    <string name="checkout_lbl_selected_address"> Direccion</string>
+    <string name="checkout_lbl_items_receipt">Items</string>
+    <string name="lbl_payment_mode">Metodo de pago</string>
+    <string name="lbl_cash_on_delivery">Contraentrega</string>
+    <string name="btn_lbl_place_order">Orden</string>
+    <string name="no_order_placed_yet">Todavia no hay orden de compra!</string>
+
+    <!--Detalle orden activity -->
+    <string name="titulo_detalleorden">DETALLES DE MI ORDEN</string>
+    <string name="txtDetalles">Detalles</string>
+    <string name="txtOrdenId">ID de orden</string>
+    <string name="order_details_lbl_order_date">Fecha</string>
+    <string name="order_details_lbl_order_status">Estado</string>
+    <string name="order_status_pending">Pendiente</string>
+    <string name="order_details_lbl_shipping_address">Direccion</string>
+
+    <string name="enproceso">En Proceso</string>
+    <string name="entregado">Entregado</string>
+    <string name="tituloprdven">Vendidos</string>
+    <string name="txtnoprodvend">Todavia no hay productos vendidos!</string>
+
+    <string name="txtDetalledelprodVend">Detalle de productos vendidos</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.321875" />
+        <entry key="../../../../layout/custom_preview.xml" value="0.321875" />
+        <entry key="app/src/main/res/drawable/app_gradient_color_background.xml" value="0.2025" />
+        <entry key="app/src/main/res/drawable/button_background.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/gender_tab_selector.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/gender_tab_text_color_selector.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/ic_akar_icons_shopping_bag.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/ic_back_button_white_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_bi_person.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/ic_black_back_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_bx_cart.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_outline_home.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/ic_vector_add_photo.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_vector_cart.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/ic_vector_dashboard.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/ic_vector_delete.xml" value="0.2025" />
+        <entry key="app/src/main/res/drawable/ic_vector_edit_24.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/ic_vector_orders.xml" value="0.2025" />
+        <entry key="app/src/main/res/drawable/ic_vector_products.xml" value="0.2025" />
+        <entry key="app/src/main/res/drawable/ic_vector_right.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/ic_vector_settings.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/ic_vector_sold_products.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/ic_vectorcart.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/item_dashboard_background.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/item_grey_border_background.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/item_primary_background_border_background.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/rv_item_image_background.xml" value="0.184" />
+        <entry key="app/src/main/res/drawable/user_image_background.xml" value="0.184" />
+        <entry key="app/src/main/res/layout/activity_add_product.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_base.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/layout/activity_cart_list.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_checkout.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.14272023076596463" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.23778533935546878" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_my_order_details.xml" value="0.4336734693877551" />
+        <entry key="app/src/main/res/layout/activity_product_details.xml" value="0.20952380952380953" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_sold_product_details.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_user_profile.xml" value="0.20455169677734375" />
+        <entry key="app/src/main/res/layout/dialog_progress.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_base.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_orders.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_products.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_sold_products.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/item_address_layout.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/item_cart_layout.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/layout/item_dashboard_layout.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/item_list_layout.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/shimmer_item_address_layout.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/shimmer_item_dashboard_layout.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/shimmer_item_list_layout.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/menu/menu_dashboard.xml" value="0.3414306640625" />
+        <entry key="app/src/main/res/menu/menu_products.xml" value="0.3098958333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
