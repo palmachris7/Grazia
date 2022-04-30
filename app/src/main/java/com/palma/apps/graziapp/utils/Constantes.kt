@@ -21,8 +21,8 @@ object Constantes {
     const val EXTRA_USER_DETAILS: String = "extra_user_details"
     const val EXTRA_ADDRESS_DETAILS: String = "extra_address_details"
 
-    const val MALE: String = "Mujer"
-    const val FEMALE: String = "Hombre"
+    const val HOMBRE: String = "Mujer"
+    const val MUJER: String = "Hombre"
 
     const val FIRST_NAME : String = "firstName"
     const val LAST_NAME : String = "lastName"

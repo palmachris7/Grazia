@@ -56,7 +56,7 @@ class PerfilUsuarioActivity : BaseActivity(), View.OnClickListener {
                     binding.etMobileNumber.setText(mUserDetails.mobile.toString())
                 }
 
-                if (mUserDetails.gender == Constantes.MALE){
+                if (mUserDetails.gender == Constantes.HOMBRE){
                     binding.rbMale.isChecked = true
                 }else{
                     binding.rbFemale.isChecked = true
@@ -167,7 +167,7 @@ class PerfilUsuarioActivity : BaseActivity(), View.OnClickListener {
         if (binding.etMobileNumber.text.toString() != mUserDetails.mobile.toString() && binding.etMobileNumber.text.toString() != "0L"){
             userHashMap[Constantes.MOBILE] = binding.etMobileNumber.text.toString().toLong()
         }
-        userHashMap[Constantes.GENDER] = if (binding.rbMale.isChecked) Constantes.MALE else Constantes.FEMALE
+        userHashMap[Constantes.GENDER] = if (binding.rbMale.isChecked) Constantes.HOMBRE else Constantes.MUJER
 
 
     }
@@ -186,9 +186,9 @@ class PerfilUsuarioActivity : BaseActivity(), View.OnClickListener {
         val mobileNumber = binding.etMobileNumber.text.toString().trim { it <= ' ' }
 
         val gender = if (binding.rbMale.isChecked) {
-            Constantes.MALE
+            Constantes.HOMBRE
         } else {
-            Constantes.FEMALE
+            Constantes.MUJER
         }
         if (mUserProfileImageUrl.isNotEmpty()) {
             userHashMap[Constantes.IMAGE] = mUserProfileImageUrl
