@@ -16,9 +16,11 @@ import com.palma.apps.graziapp.modelos.Prenda
 
 class ProductsFragment : BaseFragment() {
 
+//    private lateinit var homeViewModel: HomeViewModel
     private var _binding: FragmentProductsBinding? = null
 
-
+    // This property is only valid between onCreateView and
+    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +34,8 @@ class ProductsFragment : BaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
+//        homeViewModel =
+//            ViewModelProvider(this).get(HomeViewModel::class.java)
 
         _binding = FragmentProductsBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -46,7 +49,7 @@ class ProductsFragment : BaseFragment() {
     }
 
     fun deleteProduct(productID : String){
-
+//        Toast.makeText(requireActivity(), "You can now delete the product. $productID", Toast.LENGTH_SHORT).show()
 
         showAlertDialogToDeleteProduct(productID)
     }
@@ -96,12 +99,12 @@ class ProductsFragment : BaseFragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.action_add->{
-                startActivity(Intent(activity, AddProductActivity::class.java))
-                return true
+        /*    when(item.itemId){
+      R.id.action_add->{
+               startActivity(Intent(activity, AddProductActivity::class.java))
+               return true
             }
-        }
+        }*/
         return super.onOptionsItemSelected(item)
     }
     private fun showAlertDialogToDeleteProduct(productID : String){
