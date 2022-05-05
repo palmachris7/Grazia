@@ -34,23 +34,23 @@
     <string name="label_hombre">Hombre </string>
     <string name="label_mujer">Mujer</string>
     <string name="txtGuardar">Guardar</string>
-    <string name="read_storage_permission_denied">Tienes que dar permisos a la aplicacion¡¡¡.</string>
-    <string name="image_selection_failed">Algo salió mal</string>
+    <string name="permisosdeapp">Tienes que dar permisos a la aplicacion¡¡¡.</string>
+    <string name="noimage">Algo salió mal</string>
 
-    <string name="error_mobile_number">Por favor ingrese un numero</string>
+    <string name="errornumber">Por favor ingrese un numero</string>
 
-    <string name="profile_update_success_message">Perfil actualizado correctamente</string>
+    <string name="perfilupdated">Perfil actualizado correctamente</string>
 
     <!--    <string name="title_activity_dashboard">MainActivity</string>-->
-    <string name="title_dashboard">Principal</string>
-    <string name="please_press_back_again_to_exit">Presione nuevamente para salir</string>
-    <string name="title_orders">Orden</string>
-    <string name="title_products">Catalogo</string>
-    <string name="title_settings">Cuenta</string>
-    <string name="lbl_edit">Editar</string>
-    <string name="lbl_addresses">Direccion</string>
-    <string name="btn_lbl_logout">Salir</string>
-    <string name="edit_profile">Editar Perfil </string>
+    <string name="titulodashboard">Principal</string>
+    <string name="presioneagain">Presione nuevamente para salir</string>
+    <string name="tituloorden">Orden</string>
+    <string name="titulocatalogo">Catalogo</string>
+    <string name="titulocuenta">Cuenta</string>
+    <string name="lbleditar">Editar</string>
+    <string name="lbldireccion">Direccion</string>
+    <string name="lblsalir">Salir</string>
+    <string name="edtperfil">Editar Perfil </string>
     <string name="add_product">Agregar Producto</string>
 
     <!-- Agregar producto activity -->
@@ -119,23 +119,23 @@
     <string name="select_address">SELECCIONAR  DIRECCION</string>
 
     <!-- Confirmar activity -->
-    <string name="title_checkout">CONFIRMAR</string>
-    <string name="checkout_lbl_product_items">Items</string>
-    <string name="checkout_lbl_selected_address"> Direccion</string>
-    <string name="checkout_lbl_items_receipt">Items</string>
-    <string name="lbl_payment_mode">Metodo de pago</string>
-    <string name="lbl_cash_on_delivery">Contraentrega</string>
-    <string name="btn_lbl_place_order">Orden</string>
-    <string name="no_order_placed_yet">Todavia no hay orden de compra!</string>
+    <string name="confirmar">CONFIRMAR</string>
+    <string name="confitems">Items</string>
+    <string name="direccionconf"> Direccion</string>
+    <string name="items">Items</string>
+    <string name="metodopago">Metodo de pago</string>
+    <string name="contraentrega">Contraentrega</string>
+    <string name="orden">Orden</string>
+    <string name="nohayorden">Todavia no hay orden de compra!</string>
 
     <!--Detalle orden activity -->
     <string name="titulo_detalleorden">DETALLES DE MI ORDEN</string>
     <string name="txtDetalles">Detalles</string>
-    <string name="txtOrdenId">ID de orden</string>
-    <string name="order_details_lbl_order_date">Fecha</string>
-    <string name="order_details_lbl_order_status">Estado</string>
-    <string name="order_status_pending">Pendiente</string>
-    <string name="order_details_lbl_shipping_address">Direccion</string>
+    <string name="ordenid">ID de orden</string>
+    <string name="fecha">Fecha</string>
+    <string name="estadoorden">Estado</string>
+    <string name="pendiente">Pendiente</string>
+    <string name="direccion">Direccion</string>
 
     <string name="enproceso">En Proceso</string>
     <string name="entregado">Entregado</string>

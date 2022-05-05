@@ -36,7 +36,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="@string/title_settings"
+                    android:text="@string/titulocuenta"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     android:textSize="@dimen/settings_name_textSize" />
@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tv_edit"
             android:layout_below="@+id/fl_header_bg"
-            android:text="@string/lbl_edit"
+            android:text="@string/lbleditar"
             android:layout_alignParentEnd="true"
             android:layout_margin="16dp"
             android:background="@drawable/item_grey_border_background"
@@ -146,7 +146,7 @@
                 android:layout_weight="1"
                 android:textSize="@dimen/settings_lbl_addresses_textSize"
                 android:textColor="@color/colorSecondaryText"
-                android:text="@string/lbl_addresses"/>
+                android:text="@string/lbldireccion"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -168,7 +168,7 @@
             android:layout_marginBottom="@dimen/settings_button_marginTopBottom"
             android:foreground="?attr/selectableItemBackground"
             android:background="@drawable/button_background"
-            android:text="@string/btn_lbl_logout"
+            android:text="@string/lblsalir"
             android:textSize="@dimen/btn_textSize"
             android:textColor="@android:color/white"
             android:paddingTop="@dimen/button_paddingTop_Bottom"

@@ -11,7 +11,7 @@
     <item
         android:id="@+id/action_cuenta"
         android:icon="@drawable/ic_bi_person"
-        android:title="@string/title_settings"
+        android:title="@string/titulocuenta"
         app:showAsAction="ifRoom" />
 
 </menu>

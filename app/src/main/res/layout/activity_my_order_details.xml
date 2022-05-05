@@ -79,7 +79,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/txtOrdenId"
+                        android:text="@string/ordenid"
                         android:textColor="@color/colorDarkGrey"
                         android:textSize="@dimen/my_order_details_label_value_textSize" />
 
@@ -103,7 +103,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/order_details_lbl_order_date"
+                        android:text="@string/fecha"
                         android:textColor="@color/colorDarkGrey"
                         android:textSize="@dimen/my_order_details_label_value_textSize" />
 
@@ -127,7 +127,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/order_details_lbl_order_status"
+                        android:text="@string/estadoorden"
                         android:textColor="@color/colorDarkGrey"
                         android:textSize="@dimen/my_order_details_label_value_textSize" />
 
@@ -135,7 +135,7 @@
                         android:id="@+id/tv_order_status"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/order_status_pending"
+                        android:text="@string/pendiente"
                         android:textAlignment="center"
                         android:textColor="@color/colorAccent"
                         android:textSize="@dimen/my_order_details_label_value_textSize"
@@ -151,7 +151,7 @@
                 android:layout_marginEnd="@dimen/my_order_details_content_marginStartEnd"
                 android:paddingTop="@dimen/my_order_details_content_lbl_padding"
                 android:paddingBottom="@dimen/my_order_details_content_lbl_padding"
-                android:text="@string/checkout_lbl_product_items"
+                android:text="@string/confitems"
                 android:textColor="@color/colorSecondaryText"
                 android:textSize="@dimen/my_order_details_lbl_textSize" />
 
@@ -169,7 +169,7 @@
                 android:layout_marginBottom="@dimen/my_order_details_content_marginTopBottom"
                 android:paddingTop="@dimen/my_order_details_content_lbl_padding"
                 android:paddingBottom="@dimen/my_order_details_content_lbl_padding"
-                android:text="@string/order_details_lbl_shipping_address"
+                android:text="@string/direccion"
                 android:textColor="@color/colorSecondaryText"
                 android:textSize="@dimen/my_order_details_lbl_textSize" />
 
@@ -248,7 +248,7 @@
                 android:layout_marginBottom="@dimen/my_order_details_content_marginTopBottom"
                 android:paddingTop="@dimen/my_order_details_content_lbl_padding"
                 android:paddingBottom="@dimen/my_order_details_content_lbl_padding"
-                android:text="@string/checkout_lbl_items_receipt"
+                android:text="@string/items"
                 android:textColor="@color/colorSecondaryText"
                 android:textSize="@dimen/my_order_details_lbl_textSize" />
 
@@ -348,7 +348,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/my_order_details_content_marginStartEnd"
                     android:layout_weight="1"
-                    android:text="@string/lbl_payment_mode"
+                    android:text="@string/metodopago"
                     android:textColor="@color/item_value_text_color"
                     android:textSize="@dimen/lbl_order_details_textSize"
                     android:layout_marginLeft="@dimen/my_order_details_content_marginStartEnd" />
@@ -357,7 +357,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/my_order_details_content_marginStartEnd"
-                    android:text="@string/lbl_cash_on_delivery"
+                    android:text="@string/contraentrega"
                     android:textColor="@color/colorAccent"
                     android:textSize="@dimen/lbl_order_details_textSize"
                     android:layout_marginRight="@dimen/my_order_details_content_marginStartEnd" />

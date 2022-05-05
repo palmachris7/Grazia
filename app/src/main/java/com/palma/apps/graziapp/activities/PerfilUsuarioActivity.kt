@@ -48,7 +48,7 @@ class PerfilUsuarioActivity : BaseActivity(), View.OnClickListener {
 
             }else{
                 setUpActionBar()
-                binding.toolbarUserProfileActivity.title = getString(R.string.edit_profile)
+                binding.toolbarUserProfileActivity.title = getString(R.string.edtperfil)
 
                 GlideLoader(this).loadUserProfile(mUserDetails.image,binding.ivUserPhoto)
 
@@ -94,7 +94,7 @@ class PerfilUsuarioActivity : BaseActivity(), View.OnClickListener {
                     e.printStackTrace()
                     Toast.makeText(
                         this,
-                        getString(R.string.image_selection_failed),
+                        getString(R.string.noimage),
                         Toast.LENGTH_SHORT
                     ).show()
                 }
@@ -114,7 +114,7 @@ class PerfilUsuarioActivity : BaseActivity(), View.OnClickListener {
         } else {
             Toast.makeText(
                 this,
-                getString(R.string.read_storage_permission_denied),
+                getString(R.string.permisosdeapp),
                 Toast.LENGTH_LONG
             ).show()
         }
@@ -211,7 +211,7 @@ class PerfilUsuarioActivity : BaseActivity(), View.OnClickListener {
     private fun validateUserProfileData(): Boolean {
         return when {
             TextUtils.isEmpty(binding.etMobileNumber.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar(getString(R.string.error_mobile_number), true)
+                showErrorSnackBar(getString(R.string.errornumber), true)
                 false
             }
             else -> {
@@ -222,7 +222,7 @@ class PerfilUsuarioActivity : BaseActivity(), View.OnClickListener {
 
     fun userProfileUpdateSuccess() {
         hideProgressDialog()
-        Toast.makeText(this, getString(R.string.profile_update_success_message), Toast.LENGTH_SHORT)
+        Toast.makeText(this, getString(R.string.perfilupdated), Toast.LENGTH_SHORT)
             .show()
 
         startActivity(Intent(this, DashboardActivity::class.java))

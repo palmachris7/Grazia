@@ -63,7 +63,7 @@ class MyOrderDetailsActivity : AppCompatActivity() {
         when{
             //if time is less than 1 hour
             diffInHours < 1->{
-                binding.tvOrderStatus.text = getString(R.string.order_status_pending)
+                binding.tvOrderStatus.text = getString(R.string.pendiente)
                 binding.tvOrderStatus.setTextColor(
                     ContextCompat.getColor(
                         this@MyOrderDetailsActivity,

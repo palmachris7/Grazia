@@ -92,7 +92,7 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
                 Constantes.showImageChooser(this)
             }else{
-                Toast.makeText(this, getString(R.string.read_storage_permission_denied), Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.permisosdeapp), Toast.LENGTH_SHORT).show()
             }
         }
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)

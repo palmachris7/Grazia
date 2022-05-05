@@ -78,7 +78,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/txtOrdenId"
+                        android:text="@string/ordenid"
                         android:textColor="@color/colorDarkGrey"
                         android:textSize="@dimen/my_order_details_label_value_textSize" />
 
@@ -102,7 +102,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/order_details_lbl_order_date"
+                        android:text="@string/fecha"
                         android:textColor="@color/colorDarkGrey"
                         android:textSize="@dimen/my_order_details_label_value_textSize" />
 
@@ -126,7 +126,7 @@
                 android:layout_marginEnd="@dimen/my_order_details_content_marginStartEnd"
                 android:paddingTop="@dimen/my_order_details_content_lbl_padding"
                 android:paddingBottom="@dimen/my_order_details_content_lbl_padding"
-                android:text="@string/checkout_lbl_product_items"
+                android:text="@string/confitems"
                 android:textColor="@color/colorSecondaryText"
                 android:textSize="@dimen/my_order_details_lbl_textSize" />
 
@@ -207,7 +207,7 @@
                 android:layout_marginBottom="@dimen/my_order_details_content_marginTopBottom"
                 android:paddingTop="@dimen/my_order_details_content_lbl_padding"
                 android:paddingBottom="@dimen/my_order_details_content_lbl_padding"
-                android:text="@string/order_details_lbl_shipping_address"
+                android:text="@string/direccion"
                 android:textColor="@color/colorSecondaryText"
                 android:textSize="@dimen/my_order_details_lbl_textSize" />
 
@@ -286,7 +286,7 @@
                 android:layout_marginBottom="@dimen/my_order_details_content_marginTopBottom"
                 android:paddingTop="@dimen/my_order_details_content_lbl_padding"
                 android:paddingBottom="@dimen/my_order_details_content_lbl_padding"
-                android:text="@string/checkout_lbl_items_receipt"
+                android:text="@string/items"
                 android:textColor="@color/colorSecondaryText"
                 android:textSize="@dimen/my_order_details_lbl_textSize" />
 

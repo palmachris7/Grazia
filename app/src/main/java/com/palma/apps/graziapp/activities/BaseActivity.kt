@@ -58,7 +58,7 @@ open class BaseActivity : AppCompatActivity() {
 
         this.doubleBackToExitPressedOnce = true
 
-        Toast.makeText(this, getString(R.string.please_press_back_again_to_exit), Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, getString(R.string.presioneagain), Toast.LENGTH_SHORT).show()
 
         Handler(Looper.myLooper()!!).postDelayed({
             doubleBackToExitPressedOnce = false
