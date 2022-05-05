@@ -25,7 +25,7 @@
             android:paddingEnd="0dp"
             android:text="@string/crear_cuenta"
             android:textColor="@color/colorPrimaryText"
-            android:textSize="@dimen/toolbar_title_text_size"
+            android:textSize="@dimen/tmñ18"
             android:paddingRight="0dp"
             android:paddingLeft="@dimen/toolbar_title_padding_start" />
 
@@ -61,9 +61,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
-                    android:padding="@dimen/et_padding"
+                    android:padding="@dimen/tm16"
                     android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/et_textSize" />
+                    android:textSize="@dimen/txt16" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -85,9 +85,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
-                    android:padding="@dimen/et_padding"
+                    android:padding="@dimen/tm16"
                     android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/et_textSize" />
+                    android:textSize="@dimen/txt16" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -109,9 +109,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
-                    android:padding="@dimen/et_padding"
+                    android:padding="@dimen/tm16"
                     android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/et_textSize" />
+                    android:textSize="@dimen/txt16" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -133,9 +133,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
-                    android:padding="@dimen/et_padding"
+                    android:padding="@dimen/tm16"
                     android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/et_textSize" />
+                    android:textSize="@dimen/txt16" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -157,9 +157,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
-                    android:padding="@dimen/et_padding"
+                    android:padding="@dimen/tm16"
                     android:textColor="@color/colorPrimaryText"
-                    android:textSize="@dimen/et_textSize" />
+                    android:textSize="@dimen/txt16" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <LinearLayout
@@ -207,7 +207,7 @@
                 android:paddingBottom="@dimen/btn_padding"
                 android:text="@string/txtRegistrar"
                 android:textColor="@android:color/white"
-                android:textSize="@dimen/btn_textSize"
+                android:textSize="@dimen/tmñ18"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/ll_terms_and_condition"
@@ -230,7 +230,7 @@
                     android:padding="@dimen/clickable_text_view_padding"
                     android:text="@string/txt_yatengocta"
                     android:textColor="@color/colorSecondaryText"
-                    android:textSize="@dimen/lbl_text_view_textSize" />
+                    android:textSize="@dimen/txt16" />
 
                 <com.palma.apps.graziapp.utils.MSPTextViewBold
                     android:id="@+id/tv_login"
@@ -240,7 +240,7 @@
                     android:padding="@dimen/clickable_text_view_padding"
                     android:text="@string/login"
                     android:textColor="@color/colorSecondaryText"
-                    android:textSize="@dimen/lbl_text_view_textSize"
+                    android:textSize="@dimen/txt16"
                     tools:ignore="UnusedAttribute" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>

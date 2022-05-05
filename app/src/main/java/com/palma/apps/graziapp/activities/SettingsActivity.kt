@@ -70,7 +70,7 @@ class SettingsActivity : BaseActivity(), View.OnClickListener {
         builder.setTitle(getString(R.string.app_name))
         builder.setMessage("Estas seguro de salir?")
         builder.setIcon(android.R.drawable.ic_dialog_alert)
-        builder.setPositiveButton("Yes") { dialogInterface, _ ->
+        builder.setPositiveButton("Si") { dialogInterface, _ ->
             dialogInterface.dismiss()
             FirebaseAuth.getInstance().signOut()
             val intent = Intent(this@SettingsActivity, LoginActivity::class.java)

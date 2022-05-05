@@ -9,7 +9,7 @@
 
     <FrameLayout
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/auth_header_image_height"
+        android:layout_height="@dimen/loginimagen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,8 +23,8 @@
             android:src="@drawable/fondo" />
 
         <ImageView
-            android:layout_width="@dimen/auth_logo_width_size"
-            android:layout_height="@dimen/auth_logo_height_size"
+            android:layout_width="@dimen/logintmñl"
+            android:layout_height="@dimen/lgtmñ"
             android:layout_gravity="center"
             android:contentDescription="@string/imagen"
             android:scaleType="fitCenter"
@@ -39,7 +39,7 @@
         android:layout_marginTop="35dp"
         android:text="@string/titulo_login"
         android:textColor="@color/colorPrimaryText"
-        android:textSize="@dimen/title_textSize"
+        android:textSize="@dimen/tmñlgn16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fl_header_image"/>
@@ -63,8 +63,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/et_email"
             android:inputType="textEmailAddress"
-            android:padding="@dimen/et_padding"
-            android:textSize="@dimen/et_textSize"
+            android:padding="@dimen/tm16"
+            android:textSize="@dimen/txt16"
             android:textColor="@color/colorPrimaryText"
             tools:text="abc@gmail.com"/>
 
@@ -89,8 +89,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/et_password"
             android:inputType="textPassword"
-            android:padding="@dimen/et_padding"
-            android:textSize="@dimen/et_textSize"
+            android:padding="@dimen/tm16"
+            android:textSize="@dimen/txt16"
             android:textColor="@color/colorPrimaryText"
             tools:text="1234546"/>
 
@@ -104,7 +104,7 @@
         android:layout_marginEnd="16dp"
         android:foreground="?attr/selectableItemBackground"
         android:padding="@dimen/clickable_text_view_padding"
-        android:text="@string/lbl_forgot_password"
+        android:text="@string/lblolvidpsswd"
         android:textSize="@dimen/forgot_password_textSize"
         android:textColor="@color/colorSecondaryText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -129,7 +129,7 @@
         tools:ignore="UnusedAttribute"
         android:layout_gravity="center"
         android:textColor="@color/white"
-        android:textSize="@dimen/btn_textSize"
+        android:textSize="@dimen/tmñ18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_forgot_password"/>
@@ -151,9 +151,9 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="1.5dp"
             android:padding="@dimen/clickable_text_view_padding"
-            android:text="@string/don_t_have_an_account"
+            android:text="@string/nocuenta"
             android:textColor="@color/colorSecondaryText"
-            android:textSize="@dimen/lbl_text_view_textSize"/>
+            android:textSize="@dimen/txt16"/>
 
         <com.palma.apps.graziapp.utils.MSPTextViewBold
             android:layout_width="wrap_content"
@@ -165,7 +165,7 @@
             android:padding="@dimen/clickable_text_view_padding"
             android:text="@string/txtRegistrarse"
             android:textColor="@color/colorSecondaryText"
-            android:textSize="@dimen/lbl_text_view_textSize"
+            android:textSize="@dimen/txt16"
             tools:ignore="UnusedAttribute" />
 
 

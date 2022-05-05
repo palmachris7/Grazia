@@ -7,17 +7,17 @@
         android:title="@string/title_dashboard" />
 
     <item
-        android:id="@+id/navigation_products"
+        android:id="@+id/navigation_productos"
         android:icon="@drawable/ic_sharp_filter_list"
         android:title="@string/title_products" />
 
     <item
-        android:id="@+id/navigation_orders"
+        android:id="@+id/navigation_ordenes"
         android:icon="@drawable/ic_akar_icons_shopping_bag"
         android:title="@string/title_orders" />
 
    <!-- <item
-        android:id="@+id/navigation_sold_products"
+        android:id="@+id/navigation_productosven"
         android:icon="@drawable/ic_vector_sold_products"
         android:title="@string/tituloprdven" />-->
 

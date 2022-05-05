@@ -25,7 +25,7 @@
             android:paddingEnd="0dp"
             android:text="@string/txtDetalledelprodVend"
             android:textColor="@color/white"
-            android:textSize="@dimen/toolbar_title_text_size"
+            android:textSize="@dimen/tmñ18"
             android:textStyle="bold"
             android:paddingLeft="@dimen/toolbar_title_paddingStart"
             android:paddingRight="0dp" />
@@ -50,9 +50,9 @@
             <com.palma.apps.graziapp.utils.MSPTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/my_order_details_content_marginStartEnd"
-                android:layout_marginTop="@dimen/my_order_details_content_marginTopBottom"
-                android:layout_marginEnd="@dimen/my_order_details_content_marginStartEnd"
+                android:layout_marginStart="@dimen/tm16"
+                android:layout_marginTop="@dimen/tmñ10"
+                android:layout_marginEnd="@dimen/tm16"
                 android:paddingTop="@dimen/my_order_details_content_lbl_padding"
                 android:paddingBottom="@dimen/my_order_details_content_lbl_padding"
                 android:text="@string/txtDetalles"
@@ -64,10 +64,10 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:orientation="vertical"
-                android:paddingStart="@dimen/my_order_details_content_paddingStartEnd"
-                android:paddingTop="@dimen/my_order_details_content_paddingTopBottom"
-                android:paddingEnd="@dimen/my_order_details_content_paddingStartEnd"
-                android:paddingBottom="@dimen/my_order_details_content_paddingTopBottom">
+                android:paddingStart="@dimen/tm16"
+                android:paddingTop="@dimen/tmñ10"
+                android:paddingEnd="@dimen/tm16"
+                android:paddingBottom="@dimen/tmñ10">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -121,9 +121,9 @@
             <com.palma.apps.graziapp.utils.MSPTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/my_order_details_content_marginStartEnd"
-                android:layout_marginTop="@dimen/my_order_details_content_marginTopBottom"
-                android:layout_marginEnd="@dimen/my_order_details_content_marginStartEnd"
+                android:layout_marginStart="@dimen/tm16"
+                android:layout_marginTop="@dimen/tmñ10"
+                android:layout_marginEnd="@dimen/tm16"
                 android:paddingTop="@dimen/my_order_details_content_lbl_padding"
                 android:paddingBottom="@dimen/my_order_details_content_lbl_padding"
                 android:text="@string/checkout_lbl_product_items"
@@ -136,10 +136,10 @@
                 android:background="@color/white"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:paddingStart="@dimen/sold_details_content_paddingStartEnd"
-                android:paddingTop="@dimen/sold_details_content_paddingTopBottom"
-                android:paddingEnd="@dimen/sold_details_content_paddingStartEnd"
-                android:paddingBottom="@dimen/sold_details_content_paddingTopBottom"
+                android:paddingStart="@dimen/tm16"
+                android:paddingTop="@dimen/tmñ10"
+                android:paddingEnd="@dimen/tm16"
+                android:paddingBottom="@dimen/tmñ10"
                 android:baselineAligned="false">
 
                 <LinearLayout
@@ -159,8 +159,8 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/sold_details_content_marginStartEnd"
-                    android:layout_marginEnd="@dimen/sold_details_content_marginStartEnd"
+                    android:layout_marginStart="@dimen/tm16"
+                    android:layout_marginEnd="@dimen/tm16"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -179,7 +179,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/rv_item_price_marginTop"
                         android:textColor="@color/item_value_text_color"
-                        android:textSize="@dimen/sold_details_value_textSize"
+                        android:textSize="@dimen/txtsml"
                         android:textStyle="bold"
                         tools:text="S/. 100.00" />
                 </LinearLayout>
@@ -188,9 +188,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/item_grey_border_background"
-                    android:paddingStart="@dimen/cart_quantity_paddingStartEnd"
+                    android:paddingStart="@dimen/tm16"
                     android:paddingTop="@dimen/cart_quantity_paddingTopBottom"
-                    android:paddingEnd="@dimen/cart_quantity_paddingStartEnd"
+                    android:paddingEnd="@dimen/tm16"
                     android:paddingBottom="@dimen/cart_quantity_paddingTopBottom"
                     android:textColor="@color/colorSecondaryText"
                     android:textSize="@dimen/cart_quantity_textSize"
@@ -201,10 +201,10 @@
             <com.palma.apps.graziapp.utils.MSPTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/my_order_details_content_marginStartEnd"
-                android:layout_marginTop="@dimen/my_order_details_content_marginTopBottom"
-                android:layout_marginEnd="@dimen/my_order_details_content_marginStartEnd"
-                android:layout_marginBottom="@dimen/my_order_details_content_marginTopBottom"
+                android:layout_marginStart="@dimen/tm16"
+                android:layout_marginTop="@dimen/tmñ10"
+                android:layout_marginEnd="@dimen/tm16"
+                android:layout_marginBottom="@dimen/tmñ10"
                 android:paddingTop="@dimen/my_order_details_content_lbl_padding"
                 android:paddingBottom="@dimen/my_order_details_content_lbl_padding"
                 android:text="@string/order_details_lbl_shipping_address"
@@ -216,10 +216,10 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:orientation="vertical"
-                android:paddingStart="@dimen/my_order_details_content_paddingStartEnd"
-                android:paddingTop="@dimen/my_order_details_content_paddingTopBottom"
-                android:paddingEnd="@dimen/my_order_details_content_paddingStartEnd"
-                android:paddingBottom="@dimen/my_order_details_content_paddingTopBottom">
+                android:paddingStart="@dimen/tm16"
+                android:paddingTop="@dimen/tmñ10"
+                android:paddingEnd="@dimen/tm16"
+                android:paddingBottom="@dimen/tmñ10">
 
                 <com.palma.apps.graziapp.utils.MSPTextView
                     android:id="@+id/tv_my_order_details_address_type"
@@ -280,10 +280,10 @@
             <com.palma.apps.graziapp.utils.MSPTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/my_order_details_content_marginStartEnd"
-                android:layout_marginTop="@dimen/my_order_details_content_marginTopBottom"
-                android:layout_marginEnd="@dimen/my_order_details_content_marginStartEnd"
-                android:layout_marginBottom="@dimen/my_order_details_content_marginTopBottom"
+                android:layout_marginStart="@dimen/tm16"
+                android:layout_marginTop="@dimen/tmñ10"
+                android:layout_marginEnd="@dimen/tm16"
+                android:layout_marginBottom="@dimen/tmñ10"
                 android:paddingTop="@dimen/my_order_details_content_lbl_padding"
                 android:paddingBottom="@dimen/my_order_details_content_lbl_padding"
                 android:text="@string/checkout_lbl_items_receipt"
@@ -295,7 +295,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:orientation="vertical"
-                android:padding="@dimen/my_order_details_items_receipt">
+                android:padding="@dimen/tm16">
 
                 <LinearLayout
                     android:layout_width="match_parent"

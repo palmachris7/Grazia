@@ -6,9 +6,9 @@
     <string name="titulo_login">LOGIN</string>
     <string name="txt_email_id">Email</string>
     <string name="txt_password">Contraseña</string>
-    <string name="lbl_forgot_password">Olvidaste tu Contraseña?</string>
+    <string name="lblolvidpsswd">Olvidaste tu Contraseña?</string>
     <string name="btn_lbl_login">Login</string>
-    <string name="don_t_have_an_account">No tienes cuenta?</string>
+    <string name="nocuenta">No tienes cuenta?</string>
     <string name="txtRegistrarse"><u>Registrarse</u></string>
 
     <!--Actividad Registrar-->
@@ -41,7 +41,6 @@
 
     <string name="profile_update_success_message">Perfil actualizado correctamente</string>
 
-    <!--    <string name="title_activity_dashboard">MainActivity</string>-->
     <string name="title_dashboard">Principal</string>
     <string name="please_press_back_again_to_exit">Presione nuevamente para salir</string>
     <string name="title_orders">Orden de envio</string>

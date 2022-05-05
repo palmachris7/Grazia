@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/item_list_marginTop"
+    android:layout_marginTop="@dimen/tm16"
     android:background="@color/white"
     android:orientation="vertical"
-    android:padding="@dimen/item_list_padding">
+    android:padding="@dimen/tmñ10">
 
     <LinearLayout
         android:id="@+id/ll_item_image"
@@ -32,11 +32,11 @@
         android:id="@+id/ll_product_details"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/item_image_title_price_marginStart"
-        android:layout_marginEnd="@dimen/item_image_title_price_marginStart"
+        android:layout_marginStart="@dimen/tmñ10"
+        android:layout_marginEnd="@dimen/tmñ10"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_goneMarginEnd="@dimen/item_image_title_price_marginStart"
+        app:layout_goneMarginEnd="@dimen/tmñ10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/ib_delete_product"
         app:layout_constraintStart_toEndOf="@id/ll_item_image"
@@ -58,7 +58,7 @@
             android:layout_marginTop="@dimen/rv_item_price_marginTop"
             android:background="@color/placeholder_bg"
             android:textColor="@color/item_value_text_color"
-            android:textSize="@dimen/rv_item_price_textSize"
+            android:textSize="@dimen/txtsml"
             android:textStyle="bold"
             tools:text="S/. 100.00" />
     </LinearLayout>

@@ -12,13 +12,13 @@
         tools:layout="@layout/fragment_products" />
 
     <fragment
-        android:id="@+id/navigation_products"
+        android:id="@+id/navigation_productos"
         android:name="com.palma.apps.graziapp.activities.ui.fragments.ProductsFragment"
         android:label="@string/title_products"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_orders"
+        android:id="@+id/navigation_ordenes"
         android:name="com.palma.apps.graziapp.activities.ui.fragments.OrdersFragment"
         android:label="@string/title_orders"
         tools:layout="@layout/fragment_orders" />
