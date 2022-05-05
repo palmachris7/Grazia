@@ -106,23 +106,23 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
         return when{
 
             mSelectedImageFileUri == null ->{
-                showErrorSnackBar(getString(R.string.error_message_product_image),true)
+                showErrorSnackBar(getString(R.string.selecimagen),true)
                 false
             }
             TextUtils.isEmpty(binding.etProductTitle.text.toString().trim{ it <= ' '})->{
-                showErrorSnackBar(getString(R.string.error_message_product_title),true)
+                showErrorSnackBar(getString(R.string.mensajedeerroprod),true)
                 false
             }
             TextUtils.isEmpty(binding.etProductPrice.text.toString().trim{ it <= ' '})->{
-                showErrorSnackBar(getString(R.string.error_message_product_price),true)
+                showErrorSnackBar(getString(R.string.precioerror),true)
                 false
             }
             TextUtils.isEmpty(binding.etProductDescription.text.toString().trim{ it <= ' '})->{
-                showErrorSnackBar(getString(R.string.error_message_product_description),true)
+                showErrorSnackBar(getString(R.string.descripcionerror),true)
                 false
             }
             TextUtils.isEmpty(binding.etProductQuantity.text.toString().trim{ it <= ' '})->{
-                showErrorSnackBar(getString(R.string.error_message_product_quantity),true)
+                showErrorSnackBar(getString(R.string.cantidaderror),true)
                 false
             }
             else ->{
@@ -144,7 +144,7 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
     }
      fun productUploadSuccess(){
         hideProgressDialog()
-         Toast.makeText(this, getString(R.string.product_upload_success_message), Toast.LENGTH_SHORT).show()
+         Toast.makeText(this, getString(R.string.succesproductoagregado), Toast.LENGTH_SHORT).show()
 
          finish()
 

@@ -47,7 +47,7 @@ class ItemsCarritoListAdapter(
             }
 
             holder.binding.tvCartQuantity.text =
-                context.resources.getString(R.string.lbl_text_out_of_stock)
+                context.resources.getString(R.string.nostock)
 
             holder.binding.tvCartQuantity.setTextColor(
                 ContextCompat.getColor(

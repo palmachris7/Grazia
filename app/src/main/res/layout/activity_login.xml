@@ -9,7 +9,7 @@
 
     <FrameLayout
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/auth_header_image_height"
+        android:layout_height="@dimen/imagenlogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,7 +23,7 @@
             android:src="@drawable/fondo" />
 
         <ImageView
-            android:layout_width="@dimen/auth_logo_width_size"
+            android:layout_width="@dimen/logotamaño"
             android:layout_height="@dimen/auth_logo_height_size"
             android:layout_gravity="center"
             android:contentDescription="@string/imagen"

@@ -27,8 +27,8 @@ class AddEditAddressActivity : BaseActivity() {
         }
         if(mDireccionDetails != null){
             if (mDireccionDetails!!.id.isNotEmpty()){
-                binding.tvTitle.text = getString(R.string.title_edit_address)
-                binding.btnSubmitAddress.text = getString(R.string.btn_lbl_update)
+                binding.tvTitle.text = getString(R.string.editadirec)
+                binding.btnSubmitAddress.text = getString(R.string.actualizar)
 
                 binding.etFullName.setText(mDireccionDetails?.name)
                 binding.etPhoneNumber.setText(mDireccionDetails?.mobileNumber)
@@ -146,9 +146,9 @@ class AddEditAddressActivity : BaseActivity() {
     fun addUpdateAddressSuccess(){
         hideProgressDialog()
         if(mDireccionDetails != null && mDireccionDetails!!.id.isNotEmpty()){
-            Toast.makeText(this, getString(R.string.msg_your_address_updated_successfully), Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.msgactualidirec), Toast.LENGTH_SHORT).show()
         }else {
-            Toast.makeText(this, getString(R.string.address_added_success_msg), Toast.LENGTH_SHORT)
+            Toast.makeText(this, getString(R.string.msgactualizadodirec), Toast.LENGTH_SHORT)
                 .show()
         }
         setResult(Activity.RESULT_OK)

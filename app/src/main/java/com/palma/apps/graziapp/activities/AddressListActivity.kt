@@ -65,7 +65,7 @@ class AddressListActivity : BaseActivity() {
         binding.shimmerViewContainer.stopShimmerAnimation()
 
         if (mSelectAddress) {
-            binding.tvTitle.text = getString(R.string.select_address)
+            binding.tvTitle.text = getString(R.string.selecdireccion)
             if (direccionList.size > 0) {
                 binding.tvAddAddress.visibility = View.GONE
             }else{
@@ -131,7 +131,7 @@ class AddressListActivity : BaseActivity() {
         hideProgressDialog()
         Toast.makeText(
             this@AddressListActivity,
-            getString(R.string.error_message_address_deleted_successfully),
+            getString(R.string.errordirec),
             Toast.LENGTH_SHORT
         ).show()
         getAddressList()

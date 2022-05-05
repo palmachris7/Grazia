@@ -78,7 +78,7 @@ class DetalleProductoActivity : BaseActivity() , View.OnClickListener {
         if (prenda.stock_quantity.toInt() == 0){
             hideProgressDialog()
             binding.btnAddToCart.visibility = View.GONE
-            binding.tvProductDetailsAvailableQuantity.text = getString(R.string.lbl_text_out_of_stock)
+            binding.tvProductDetailsAvailableQuantity.text = getString(R.string.nostock)
             binding.tvProductDetailsAvailableQuantity.setTextColor(
                 ContextCompat.getColor(this,R.color.colorSnackBarError)
             )
@@ -134,7 +134,7 @@ class DetalleProductoActivity : BaseActivity() , View.OnClickListener {
 
     fun addToCartSuccess(){
         hideProgressDialog()
-        Toast.makeText(this@DetalleProductoActivity, getString(R.string.success_message_item_added_in_cart), Toast.LENGTH_SHORT).show()
+        Toast.makeText(this@DetalleProductoActivity, getString(R.string.prdadd), Toast.LENGTH_SHORT).show()
 
 
         binding.btnGoToCart.visibility = View.VISIBLE

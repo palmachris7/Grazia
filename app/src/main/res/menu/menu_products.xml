@@ -6,6 +6,6 @@
         app:showAsAction="always"
         android:icon="@drawable/ic_add_vector_24"
         android:orderInCategory="100"
-        android:title="@string/add_product"/>
+        android:title="@string/add_producto"/>
 
 </menu>

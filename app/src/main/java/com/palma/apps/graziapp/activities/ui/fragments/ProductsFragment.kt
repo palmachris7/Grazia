@@ -93,7 +93,7 @@ class ProductsFragment : BaseFragment() {
     fun productDeleteSuccess(){
         hideProgressDialog()
 
-        Toast.makeText(requireActivity(), getString(R.string.product_delete_success), Toast.LENGTH_SHORT).show()
+        Toast.makeText(requireActivity(), getString(R.string.productoeliminado), Toast.LENGTH_SHORT).show()
 
         getProductListFromFirestore()
     }
@@ -110,10 +110,10 @@ class ProductsFragment : BaseFragment() {
     private fun showAlertDialogToDeleteProduct(productID : String){
         val builder = AlertDialog.Builder(requireActivity())
 
-        builder.setTitle(getString(R.string.delete_dialog_title))
-        builder.setMessage(getString(R.string.delete_dialog_message))
+        builder.setTitle(getString(R.string.eliminar))
+        builder.setMessage(getString(R.string.preguntaeliminar))
         builder.setIcon(android.R.drawable.ic_dialog_alert)
-        builder.setPositiveButton(getString(R.string.yes)){
+        builder.setPositiveButton(getString(R.string.si)){
             dialogInterface,_->
 
             showProgressDialog(getString(R.string.txtEspere))

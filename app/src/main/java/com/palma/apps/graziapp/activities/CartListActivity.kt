@@ -150,7 +150,7 @@ class CartListActivity : BaseActivity() {
     }
     fun itemRemoveSuccess(){
         hideProgressDialog()
-        Toast.makeText(this, getString(R.string.msg_item_removed_successfully), Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, getString(R.string.msgeliminada), Toast.LENGTH_SHORT).show()
 
         getCartItemList()
     }
