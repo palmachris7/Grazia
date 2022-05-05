@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/item_address_marginTop"
+    android:layout_marginTop="@dimen/itm16"
     android:background="@color/white"
     android:orientation="vertical"
-    android:paddingStart="@dimen/item_address_paddingStartEnd"
-    android:paddingTop="@dimen/item_address_paddingTopBottom"
-    android:paddingEnd="@dimen/item_address_paddingStartEnd"
-    android:paddingBottom="@dimen/item_address_paddingTopBottom">
+    android:paddingStart="@dimen/itm16"
+    android:paddingTop="@dimen/direc10"
+    android:paddingEnd="@dimen/itm16"
+    android:paddingBottom="@dimen/direc10">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textColor="@color/item_value_text_color"
-            android:textSize="@dimen/item_address_name_textSize"
+            android:textSize="@dimen/lbl18"
             tools:text="Ashutosh pandey" />
 
         <com.palma.apps.graziapp.utils.MSPTextView
@@ -31,12 +31,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/app_gradient_color_background"
-            android:paddingStart="@dimen/item_address_type_paddingStartEnd"
-            android:paddingTop="@dimen/item_address_type_paddingTopBottom"
-            android:paddingEnd="@dimen/item_address_type_paddingStartEnd"
-            android:paddingBottom="@dimen/item_address_type_paddingTopBottom"
+            android:paddingStart="@dimen/direc10"
+            android:paddingTop="@dimen/lbl2"
+            android:paddingEnd="@dimen/direc10"
+            android:paddingBottom="@dimen/lbl2"
             android:textColor="@color/white"
-            android:textSize="@dimen/address_details_textSize"
+            android:textSize="@dimen/lbl14"
             android:textStyle="bold"
             tools:text="Home" />
     </LinearLayout>
@@ -45,18 +45,18 @@
         android:id="@+id/tv_address_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/address_details_marginTop"
+        android:layout_marginTop="@dimen/lbl2"
         android:textColor="@color/item_value_text_color"
-        android:textSize="@dimen/address_details_textSize"
+        android:textSize="@dimen/lbl14"
         tools:text="XYZ" />
 
     <com.palma.apps.graziapp.utils.MSPTextView
         android:id="@+id/tv_address_mobile_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/address_details_marginTop"
+        android:layout_marginTop="@dimen/lbl2"
         android:textColor="@color/item_value_text_color"
-        android:textSize="@dimen/address_details_textSize"
+        android:textSize="@dimen/lbl14"
         tools:text="+64 123456789" />
 </LinearLayout>
     <!--END-->

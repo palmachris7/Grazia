@@ -24,7 +24,7 @@
 
         <ImageView
             android:layout_width="@dimen/logotamaño"
-            android:layout_height="@dimen/auth_logo_height_size"
+            android:layout_height="@dimen/logotmñ"
             android:layout_gravity="center"
             android:contentDescription="@string/imagen"
             android:scaleType="fitCenter"
@@ -39,7 +39,7 @@
         android:layout_marginTop="35dp"
         android:text="@string/titulo_login"
         android:textColor="@color/colorPrimaryText"
-        android:textSize="@dimen/title_textSize"
+        android:textSize="@dimen/lbl18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fl_header_image"/>
@@ -63,8 +63,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/et_email"
             android:inputType="textEmailAddress"
-            android:padding="@dimen/et_padding"
-            android:textSize="@dimen/et_textSize"
+            android:padding="@dimen/tm16"
+            android:textSize="@dimen/tm16"
             android:textColor="@color/colorPrimaryText"
             tools:text="abc@gmail.com"/>
 
@@ -89,8 +89,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/et_password"
             android:inputType="textPassword"
-            android:padding="@dimen/et_padding"
-            android:textSize="@dimen/et_textSize"
+            android:padding="@dimen/tm16"
+            android:textSize="@dimen/tm16"
             android:textColor="@color/colorPrimaryText"
             tools:text="1234546"/>
 
@@ -103,9 +103,9 @@
         android:id="@+id/tv_forgot_password"
         android:layout_marginEnd="16dp"
         android:foreground="?attr/selectableItemBackground"
-        android:padding="@dimen/clickable_text_view_padding"
+        android:padding="@dimen/tm5"
         android:text="@string/lbl_forgot_password"
-        android:textSize="@dimen/forgot_password_textSize"
+        android:textSize="@dimen/lbl14"
         android:textColor="@color/colorSecondaryText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/til_password"
@@ -121,15 +121,15 @@
         android:layout_marginEnd="16dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/button_background"
-        android:paddingTop="@dimen/btn_padding"
+        android:paddingTop="@dimen/tmñpadding"
         android:foreground="?attr/selectableItemBackground"
-        android:paddingBottom="@dimen/btn_padding"
+        android:paddingBottom="@dimen/tmñpadding"
         android:text="@string/btn_lbl_login"
         tools:targetApi="m"
         tools:ignore="UnusedAttribute"
         android:layout_gravity="center"
         android:textColor="@color/white"
-        android:textSize="@dimen/btn_textSize"
+        android:textSize="@dimen/lbl18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_forgot_password"/>
@@ -150,10 +150,10 @@
             android:id="@+id/tv_don_t_have_an_account"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="1.5dp"
-            android:padding="@dimen/clickable_text_view_padding"
+            android:padding="@dimen/tm5"
             android:text="@string/don_t_have_an_account"
             android:textColor="@color/colorSecondaryText"
-            android:textSize="@dimen/lbl_text_view_textSize"/>
+            android:textSize="@dimen/tm16"/>
 
         <com.palma.apps.graziapp.utils.MSPTextViewBold
             android:layout_width="wrap_content"
@@ -162,10 +162,10 @@
             android:layout_marginTop="16dp"
             android:layout_marginBottom="1.5dp"
             android:foreground="?attr/selectableItemBackground"
-            android:padding="@dimen/clickable_text_view_padding"
+            android:padding="@dimen/tm5"
             android:text="@string/txtRegistrarse"
             android:textColor="@color/colorSecondaryText"
-            android:textSize="@dimen/lbl_text_view_textSize"
+            android:textSize="@dimen/tm16"
             tools:ignore="UnusedAttribute" />
 
 

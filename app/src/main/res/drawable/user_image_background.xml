@@ -5,6 +5,6 @@
     <stroke android:width="@dimen/user_image_background_stroke"
         android:color="@color/colorSecondaryText"/>
 
-    <corners android:radius="@dimen/user_image_background_corner_radius"/>
+    <corners android:radius="@dimen/lbl10"/>
 
 </shape>

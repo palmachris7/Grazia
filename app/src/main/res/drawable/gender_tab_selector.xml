@@ -6,10 +6,10 @@
 
             <solid android:color="@color/colorTheme2"/>
 
-            <corners android:bottomLeftRadius="@dimen/profile_radio_button_radius"
-                android:bottomRightRadius="@dimen/profile_radio_button_radius"
-                android:topLeftRadius="@dimen/profile_radio_button_radius"
-                android:topRightRadius="@dimen/profile_radio_button_radius"/>
+            <corners android:bottomLeftRadius="@dimen/tm5"
+                android:bottomRightRadius="@dimen/tm5"
+                android:topLeftRadius="@dimen/tm5"
+                android:topRightRadius="@dimen/tm5"/>
         </shape>
     </item>
  <!-- this is for unchecked state -->
@@ -19,10 +19,10 @@
             <stroke android:width="@dimen/gender_radio_button_stroke_width"
                 android:color="@color/colorSecondaryText"/>
 
-            <corners android:bottomLeftRadius="@dimen/profile_radio_button_radius"
-                android:bottomRightRadius="@dimen/profile_radio_button_radius"
-                android:topLeftRadius="@dimen/profile_radio_button_radius"
-                android:topRightRadius="@dimen/profile_radio_button_radius"/>
+            <corners android:bottomLeftRadius="@dimen/tm5"
+                android:bottomRightRadius="@dimen/tm5"
+                android:topLeftRadius="@dimen/tm5"
+                android:topRightRadius="@dimen/tm5"/>
 
         </shape>
 

@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/item_list_marginTop"
+    android:layout_marginTop="@dimen/item16"
     android:background="@color/white"
     android:orientation="vertical"
-    android:padding="@dimen/item_list_padding">
+    android:padding="@dimen/lbl10">
 
     <LinearLayout
         android:id="@+id/ll_item_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/rv_item_image_background"
-        android:padding="@dimen/item_image_padding"
+        android:padding="@dimen/lbl2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -33,11 +33,11 @@
         android:id="@+id/ll_product_details"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/item_image_title_price_marginStart"
-        android:layout_marginEnd="@dimen/item_image_title_price_marginStart"
+        android:layout_marginStart="@dimen/lbl10"
+        android:layout_marginEnd="@dimen/lbl10"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_goneMarginEnd="@dimen/item_image_title_price_marginStart"
+        app:layout_goneMarginEnd="@dimen/lbl10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/ib_delete_product"
         app:layout_constraintStart_toEndOf="@id/ll_item_image"
@@ -48,14 +48,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/item_value_text_color"
-            android:textSize="@dimen/rv_item_name_textSize"
+            android:textSize="@dimen/lbl14"
             tools:text="Name" />
 
         <com.palma.apps.graziapp.utils.MSPTextView
             android:id="@+id/tv_item_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/rv_item_price_marginTop"
+            android:layout_marginTop="@dimen/lbl2"
             android:textColor="@color/item_value_text_color"
             android:textSize="@dimen/rv_item_price_textSize"
             android:textStyle="bold"
@@ -69,7 +69,7 @@
         android:background="@android:color/transparent"
         android:contentDescription="@string/imagen"
         android:foreground="?attr/selectableItemBackgroundBorderless"
-        android:padding="@dimen/delete_icon_padding"
+        android:padding="@dimen/tm5"
         android:src="@drawable/ic_vector_delete"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ll_product_details"

@@ -77,12 +77,12 @@
             android:layout_margin="16dp"
             android:background="@drawable/item_grey_border_background"
             android:foreground="?attr/selectableItemBackground"
-            android:paddingStart="@dimen/setting_edit_label_marginStartEnd"
-            android:paddingEnd="@dimen/setting_edit_label_marginStartEnd"
+            android:paddingStart="@dimen/lbl10"
+            android:paddingEnd="@dimen/lbl10"
             android:paddingTop="@dimen/setting_edit_label_marginTopBottom"
             android:paddingBottom="@dimen/setting_edit_label_marginTopBottom"
             android:textColor="@color/colorSecondaryText"
-            android:textSize="@dimen/setting_edit_label_textSize"
+            android:textSize="@dimen/lbl14"
             android:layout_alignParentRight="true"
             tools:ignore="UnusedAttribute" />
 
@@ -104,7 +104,7 @@
             android:layout_below="@id/tv_name"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/settings_info_marginTop"
-            android:textSize="@dimen/settings_info_textSize"
+            android:textSize="@dimen/lbl18"
             android:textColor="@color/colorSecondaryText"
             tools:text = "Male"/>
         <com.palma.apps.graziapp.utils.MSPTextView
@@ -114,7 +114,7 @@
             android:layout_below="@id/tv_gender"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/settings_info_marginTop"
-            android:textSize="@dimen/settings_info_textSize"
+            android:textSize="@dimen/lbl18"
             android:textColor="@color/colorSecondaryText"
             tools:text = "pandey123@gmail.com"/>
         <com.palma.apps.graziapp.utils.MSPTextView
@@ -124,7 +124,7 @@
             android:layout_below="@id/tv_email"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/settings_info_marginTop"
-            android:textSize="@dimen/settings_info_textSize"
+            android:textSize="@dimen/lbl18"
             android:textColor="@color/colorSecondaryText"
             tools:text = "9654656801"/>
 
@@ -133,18 +133,18 @@
             android:layout_height="wrap_content"
             android:id="@+id/ll_address"
             android:layout_below="@+id/tv_mobile_number"
-            android:layout_margin="@dimen/settings_address_margin"
+            android:layout_margin="@dimen/confg16"
             android:background="@drawable/item_grey_border_background"
             android:foreground="?attr/selectableItemBackground"
             android:orientation="horizontal"
-            android:padding="@dimen/settings_address_padding"
+            android:padding="@dimen/confg16"
             >
             <com.palma.apps.graziapp.utils.MSPTextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/settings_lbl_addresses_margin"
                 android:layout_weight="1"
-                android:textSize="@dimen/settings_lbl_addresses_textSize"
+                android:textSize="@dimen/lbl18"
                 android:textColor="@color/colorSecondaryText"
                 android:text="@string/lbldireccion"/>
             <ImageView
@@ -164,15 +164,15 @@
             android:gravity="center"
             android:layout_marginStart="@dimen/settings_button_marginStartEnd"
             android:layout_marginEnd="@dimen/settings_button_marginStartEnd"
-            android:layout_marginTop="@dimen/settings_button_marginTopBottom"
-            android:layout_marginBottom="@dimen/settings_button_marginTopBottom"
+            android:layout_marginTop="@dimen/confg16"
+            android:layout_marginBottom="@dimen/confg16"
             android:foreground="?attr/selectableItemBackground"
             android:background="@drawable/button_background"
             android:text="@string/lblsalir"
-            android:textSize="@dimen/btn_textSize"
+            android:textSize="@dimen/lbl18"
             android:textColor="@android:color/white"
-            android:paddingTop="@dimen/button_paddingTop_Bottom"
-            android:paddingBottom="@dimen/button_paddingTop_Bottom"
+            android:paddingTop="@dimen/tmñpadding"
+            android:paddingBottom="@dimen/tmñpadding"
             tools:ignore="UnusedAttribute" />
 
 

@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
-    android:padding="@dimen/progress_dialog_content_padding"
+    android:padding="@dimen/lbl10"
     android:gravity="center">
 
     <ProgressBar
@@ -21,9 +21,9 @@
         android:layout_height="wrap_content"
         android:text="@string/txtEspere"
         android:textColor="@color/colorPrimaryText"
-        android:textSize="@dimen/progress_text_size"
-        android:layout_marginStart="@dimen/progress_text_margin_start"
-        android:layout_marginLeft="@dimen/progress_text_margin_start" />
+        android:textSize="@dimen/tm16"
+        android:layout_marginStart="@dimen/prgs16"
+        android:layout_marginLeft="@dimen/prgs16" />
 
 
 </LinearLayout>
