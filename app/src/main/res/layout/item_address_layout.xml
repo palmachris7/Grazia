@@ -24,7 +24,7 @@
             android:layout_weight="1"
             android:textColor="@color/item_value_text_color"
             android:textSize="@dimen/lbl18"
-            tools:text="Ashutosh pandey" />
+            tools:text="Christopheer palma" />
 
         <com.palma.apps.graziapp.utils.MSPTextView
             android:id="@+id/tv_address_type"
@@ -38,7 +38,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/lbl14"
             android:textStyle="bold"
-            tools:text="Home" />
+            tools:text="Casa" />
     </LinearLayout>
 
     <com.palma.apps.graziapp.utils.MSPTextView
@@ -57,6 +57,6 @@
         android:layout_marginTop="@dimen/lbl2"
         android:textColor="@color/item_value_text_color"
         android:textSize="@dimen/lbl14"
-        tools:text="+64 123456789" />
+        tools:text="+51 123456789" />
 </LinearLayout>
     <!--END-->

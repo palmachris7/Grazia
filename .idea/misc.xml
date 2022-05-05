@@ -34,18 +34,20 @@
         <entry key="app/src/main/res/drawable/item_primary_background_border_background.xml" value="0.184" />
         <entry key="app/src/main/res/drawable/rv_item_image_background.xml" value="0.184" />
         <entry key="app/src/main/res/drawable/user_image_background.xml" value="0.184" />
-        <entry key="app/src/main/res/layout/activity_add_edit_address.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/activity_add_edit_address.xml" value="0.18676268665503104" />
         <entry key="app/src/main/res/layout/activity_add_product.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_address_list.xml" value="0.22554347826086957" />
         <entry key="app/src/main/res/layout/activity_base.xml" value="0.18478260869565216" />
         <entry key="app/src/main/res/layout/activity_cart_list.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/activity_checkout.xml" value="0.18478260869565216" />
+        <entry key="app/src/main/res/layout/activity_checkout.xml" value="0.10550862187924592" />
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.18478260869565216" />
         <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.14272023076596463" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.23778533935546878" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_my_order_details.xml" value="0.4336734693877551" />
+        <entry key="app/src/main/res/layout/activity_my_order_details.xml" value="0.24979743179009883" />
         <entry key="app/src/main/res/layout/activity_product_details.xml" value="0.20952380952380953" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_registro.xml" value="0.22554347826086957" />
         <entry key="app/src/main/res/layout/activity_settings.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_sold_product_details.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.19610507246376813" />

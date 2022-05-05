@@ -87,15 +87,15 @@
             tools:ignore="UnusedAttribute" />
 
         <com.palma.apps.graziapp.utils.MSPTextViewBold
+            android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_name"
             android:layout_below="@id/fl_user_image"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/settings_name_marginTop"
             android:textColor="@color/colorDarkGrey"
-            tools:text = "Ashutosh Pandey"
-            android:textSize="@dimen/settings_name_textSize"/>
+            android:textSize="@dimen/settings_name_textSize"
+            tools:text="Christopher Palma" />
 
         <com.palma.apps.graziapp.utils.MSPTextView
             android:layout_width="wrap_content"
@@ -107,16 +107,17 @@
             android:textSize="@dimen/lbl18"
             android:textColor="@color/colorSecondaryText"
             tools:text = "Male"/>
+
         <com.palma.apps.graziapp.utils.MSPTextView
+            android:id="@+id/tv_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_email"
             android:layout_below="@id/tv_gender"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/settings_info_marginTop"
-            android:textSize="@dimen/lbl18"
             android:textColor="@color/colorSecondaryText"
-            tools:text = "pandey123@gmail.com"/>
+            android:textSize="@dimen/lbl18"
+            tools:text="123@gmail.com" />
         <com.palma.apps.graziapp.utils.MSPTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
