@@ -16,7 +16,7 @@ object Constantes {
     const val SOLD_PRODUCT :String = "prendas_vendidas"
 
 
-    const val MY_SHOP_PAL_PREFERENCES: String = "myShopPalPreferences"
+    const val GRAZIA_PREFERENCES: String = "Grazia"
     const val LOGGED_IN_USERNAME: String = "logged_in_user_name"
     const val EXTRA_USER_DETAILS: String = "extra_user_details"
     const val EXTRA_ADDRESS_DETAILS: String = "extra_address_details"
