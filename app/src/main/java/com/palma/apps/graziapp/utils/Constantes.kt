@@ -55,14 +55,14 @@ object Constantes {
 
     const val ADDRESSES : String = "direccion"
 
-    const val EXTRA_SELECT_ADDRESS : String = "extra_select_address"
+    const val EXTRA_SELECT_DIRECCION : String = "extra_select_address"
     const val ADD_ADDRESS_REQUEST_CODE : Int = 121
 
     const val EXTRA_SELECTED_ADDRESS : String = "extra_selected_address"
 
     const val STOCK_QUANTITY : String = "stock_quantity"
 
-    const val EXTRA_MY_ORDER_DETAILS : String = "extra_my_order_details"
+    const val DETALLES_EXTRA_ORDEN : String = "extra_my_order_details"
 
 
     const val EXTRA_SOLD_PRODUCT_DETAILS : String = "extra_sold_product_details"

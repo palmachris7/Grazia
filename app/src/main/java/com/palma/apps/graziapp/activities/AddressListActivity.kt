@@ -32,8 +32,8 @@ class AddressListActivity : BaseActivity() {
             startActivityForResult(intent,Constantes.ADD_ADDRESS_REQUEST_CODE)
         }
 
-        if (intent.hasExtra(Constantes.EXTRA_SELECT_ADDRESS)) {
-            mSelectAddress = intent.getBooleanExtra(Constantes.EXTRA_SELECT_ADDRESS, false)
+        if (intent.hasExtra(Constantes.EXTRA_SELECT_DIRECCION)) {
+            mSelectAddress = intent.getBooleanExtra(Constantes.EXTRA_SELECT_DIRECCION, false)
         }
         getAddressList()
 

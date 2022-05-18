@@ -12,7 +12,7 @@ class MSPTextView (context : Context, attrs : AttributeSet) : AppCompatTextView(
     }
 
     private fun applyFonts() {
-        //this is use to get the file from asset folder and set it to the title
+
         val typeFace: Typeface = Typeface.createFromAsset(context.assets, "Montserrat-Regular.ttf")
         typeface = typeFace
     }

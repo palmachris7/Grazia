@@ -314,11 +314,11 @@
                         android:id="@+id/tv_order_details_sub_total"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
                         android:textAlignment="center"
                         android:textColor="@color/colorSecondaryText"
                         android:textSize="@dimen/my_order_details_label_value_textSize"
-                        tools:text="$100"
-                        android:gravity="center_horizontal" />
+                        tools:text="S/100" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -338,11 +338,11 @@
                         android:id="@+id/tv_order_details_shipping_charge"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
                         android:textAlignment="center"
                         android:textColor="@color/colorSecondaryText"
                         android:textSize="@dimen/my_order_details_label_value_textSize"
-                        tools:text="$10.0"
-                        android:gravity="center_horizontal" />
+                        tools:text="S/10.0" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -362,11 +362,11 @@
                         android:id="@+id/tv_order_details_total_amount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
                         android:textAlignment="center"
                         android:textColor="@color/colorDarkGrey"
                         android:textSize="@dimen/my_order_details_label_value_textSize"
-                        tools:text="$110"
-                        android:gravity="center_horizontal" />
+                        tools:text="S/110" />
                 </LinearLayout>
             </LinearLayout>
 

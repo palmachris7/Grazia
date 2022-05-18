@@ -28,7 +28,7 @@ class CartListActivity : BaseActivity() {
 
         binding.btnCheckout.setOnClickListener{
             val intent = Intent(this@CartListActivity,AddressListActivity::class.java)
-            intent.putExtra(Constantes.EXTRA_SELECT_ADDRESS,true)
+            intent.putExtra(Constantes.EXTRA_SELECT_DIRECCION,true)
             startActivity(intent)
         }
     }
@@ -50,14 +50,20 @@ class CartListActivity : BaseActivity() {
         getProductList()
     }
 
+    //Trae lista carrito
     private fun getCartItemList(){
-  showProgressDialog(getString(R.string.txtEspere))
+        //Carga infinito
+       //showProgressDialog(getString(R.string.txtEspere))
         FireStoreClass().getCartList(this)
     }
+
+    //Actualizar
     fun itemUpdateSuccess(){
         hideProgressDialog()
         getCartItemList()
     }
+
+    //Lista del carrito
     @SuppressLint("SetTextI18n")
     fun successCartItemList(cartList : ArrayList<Carrito>){
         hideProgressDialog()
@@ -136,18 +142,24 @@ class CartListActivity : BaseActivity() {
         }
     }
 
+    //Prenda traida de firebase
     fun successProductListFromFireStore(prendaList : ArrayList<Prenda>){
 
         mPrendaList = prendaList
         hideProgressDialog()
-        //after getting product list
+        //Traer la lista de productos
         getCartItemList()
 
     }
+
+
+    //Trae Lista de Productos
     private fun getProductList(){
-        showProgressDialog(getString(R.string.txtEspere))
         FireStoreClass().getAllProductList(this)
+                //A veces carga infinito
+            showProgressDialog(getString(R.string.txtEspere))
     }
+    //Elimina prenda de carrito
     fun itemRemoveSuccess(){
         hideProgressDialog()
         Toast.makeText(this, getString(R.string.msg_item_removed_successfully), Toast.LENGTH_SHORT).show()

@@ -25,8 +25,8 @@ class MyOrderDetailsActivity : AppCompatActivity() {
 
         setUpActionBar()
 
-        if (intent.hasExtra(Constantes.EXTRA_MY_ORDER_DETAILS)){
-            mMyOrderDetails = intent.getParcelableExtra(Constantes.EXTRA_MY_ORDER_DETAILS)
+        if (intent.hasExtra(Constantes.DETALLES_EXTRA_ORDEN)){
+            mMyOrderDetails = intent.getParcelableExtra(Constantes.DETALLES_EXTRA_ORDEN)
             setUpUI(mMyOrderDetails!!)
         }
     }

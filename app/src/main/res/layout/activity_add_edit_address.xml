@@ -47,7 +47,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_full_name"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/MSPTextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -71,7 +71,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_phone_number"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/MSPTextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -95,7 +95,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_address"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/MSPTextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -121,7 +121,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_zip_code"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/MSPTextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -132,6 +132,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/til_address">
+
 
                 <com.palma.apps.graziapp.utils.MSPEditText
                     android:id="@+id/et_zip_code"
@@ -145,7 +146,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_additional_note"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/MSPTextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -221,7 +222,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_other_details"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/MSPTextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"

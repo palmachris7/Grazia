@@ -79,7 +79,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/item_value_text_color"
                     android:textSize="@dimen/txt16"
-                    tools:text="Product Title" />
+                    tools:text="Titulo producto" />
 
                 <com.palma.apps.graziapp.utils.MSPTextView
                     android:id="@+id/tv_product_details_price"
@@ -113,7 +113,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_product_details_label"
-                tools:text="This is product details description." />
+                tools:text="Aqui va la descripcion de producto" />
 
             <LinearLayout
                 android:id="@+id/ll_product_details_quantity"
@@ -175,27 +175,27 @@
                 tools:visibility="visible" />
 
             <com.palma.apps.graziapp.utils.MSPButton
+                android:id="@+id/btn_go_to_cart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/btn_go_to_cart"
-                android:gravity="center"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="12dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="20dp"
                 android:background="@drawable/button_background"
                 android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
                 android:paddingTop="@dimen/btn_padding"
                 android:paddingBottom="@dimen/btn_padding"
                 android:text="@string/btn_lbl_go_to_cart"
                 android:textColor="@color/white"
                 android:textSize="@dimen/tmñ18"
                 android:visibility="gone"
-                tools:visibility="visible"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/btn_add_to_cart"
-                tools:ignore="UnusedAttribute" />
+                tools:ignore="UnusedAttribute"
+                tools:visibility="visible" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

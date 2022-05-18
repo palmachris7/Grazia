@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.palma.apps.graziapp.R
@@ -25,18 +24,18 @@ open class MyOrdersListAdapter(private val context: Context,
 
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val model = list[position]
+        val modelo = list[position]
 
-        GlideLoader(context).loadProductPicture(model.image,holder.binding.ivItemImage)
+        GlideLoader(context).loadProductPicture(modelo.image,holder.binding.ivItemImage)
 
-        holder.binding.tvItemName.text = model.title
-        holder.binding.tvItemPrice.text = "S/.${model.total_amount}"
+        holder.binding.tvItemName.text = modelo.title
+        holder.binding.tvItemPrice.text = "S/.${modelo.total_amount}"
 
       //  holder.binding.ibDeleteProduct.visibility = View.GONE
 
         holder.itemView.setOnClickListener{
             val intent = Intent(context,MyOrderDetailsActivity::class.java)
-            intent.putExtra(Constantes.EXTRA_MY_ORDER_DETAILS,model)
+            intent.putExtra(Constantes.DETALLES_EXTRA_ORDEN,modelo)
             context.startActivity(intent)
         }
     }

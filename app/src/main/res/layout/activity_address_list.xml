@@ -97,9 +97,9 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include layout="@layout/shimmer_item_address_layout"/>
-            <include layout="@layout/shimmer_item_address_layout"/>
-            <include layout="@layout/shimmer_item_address_layout"/>
+            <include layout="@layout/lista_item_direccion_layout"/>
+            <include layout="@layout/lista_item_direccion_layout"/>
+            <include layout="@layout/lista_item_direccion_layout"/>
 
 
 

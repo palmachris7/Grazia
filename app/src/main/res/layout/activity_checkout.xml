@@ -106,7 +106,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/item_value_text_color"
                     android:textSize="@dimen/item_address_name_textSize"
-                    tools:text="Denis Panjuta" />
+                    tools:text="Christopher Palma" />
 
                 <com.palma.apps.graziapp.utils.MSPTextView
                     android:id="@+id/tv_checkout_address"
@@ -142,7 +142,7 @@
                     android:layout_marginTop="@dimen/address_details_marginTop"
                     android:textColor="@color/item_value_text_color"
                     android:textSize="@dimen/address_details_textSize"
-                    tools:text="+64 123456789" />
+                    tools:text="+51 123456789" />
             </LinearLayout>
 
             <com.palma.apps.graziapp.utils.MSPTextView
@@ -185,11 +185,11 @@
                         android:id="@+id/tv_checkout_sub_total"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
                         android:textAlignment="center"
                         android:textColor="@color/colorSecondaryText"
                         android:textSize="@dimen/checkout_label_value_textSize"
-                        tools:text="Rs.100"
-                        android:gravity="center_horizontal" />
+                        tools:text="S/.100" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -209,11 +209,11 @@
                         android:id="@+id/tv_checkout_shipping_charge"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:text="Rs.10.0"
+                        android:gravity="center_horizontal"
                         android:textAlignment="center"
                         android:textColor="@color/colorSecondaryText"
                         android:textSize="@dimen/checkout_label_value_textSize"
-                        android:gravity="center_horizontal" />
+                        tools:text="S/10.0" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -233,11 +233,11 @@
                         android:id="@+id/tv_checkout_total_amount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
                         android:textAlignment="center"
                         android:textColor="@color/colorDarkGrey"
                         android:textSize="@dimen/checkout_label_value_textSize"
-                        tools:text="$110"
-                        android:gravity="center_horizontal" />
+                        tools:text="S/110" />
                 </LinearLayout>
 
             </LinearLayout>

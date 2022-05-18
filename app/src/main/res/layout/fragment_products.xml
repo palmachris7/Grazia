@@ -53,19 +53,19 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <include layout="@layout/shimmer_item_list_layout"/>
+            <include layout="@layout/lista_item_list_layout"/>
 
-            <include layout="@layout/shimmer_item_list_layout"/>
+            <include layout="@layout/lista_item_list_layout"/>
 
-            <include layout="@layout/shimmer_item_list_layout"/>
+            <include layout="@layout/lista_item_list_layout"/>
 
-            <include layout="@layout/shimmer_item_list_layout"/>
+            <include layout="@layout/lista_item_list_layout"/>
 
-            <include layout="@layout/shimmer_item_list_layout"/>
+            <include layout="@layout/lista_item_list_layout"/>
 
-            <include layout="@layout/shimmer_item_list_layout"/>
+            <include layout="@layout/lista_item_list_layout"/>
 
-            <include layout="@layout/shimmer_item_list_layout"/>
+            <include layout="@layout/lista_item_list_layout"/>
 
 
         </LinearLayout>
