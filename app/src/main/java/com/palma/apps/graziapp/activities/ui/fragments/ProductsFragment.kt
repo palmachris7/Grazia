@@ -6,13 +6,19 @@ import android.os.Bundle
 import android.view.*
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.android.volley.Request
+import com.android.volley.RequestQueue
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import com.palma.apps.graziapp.R
 import com.palma.apps.graziapp.activities.AddProductActivity
 import com.palma.apps.graziapp.activities.ui.adapters.ListaProductosAdapter
-//import com.thunder.apps.myshoppal.databinding.FragmentHomeBinding
 import com.palma.apps.graziapp.databinding.FragmentProductsBinding
 import com.palma.apps.graziapp.firestore.FireStoreClass
 import com.palma.apps.graziapp.modelos.Prenda
+import com.palma.apps.graziapp.utils.Constantes
+
 
 class ProductsFragment : BaseFragment() {
 
@@ -49,7 +55,6 @@ class ProductsFragment : BaseFragment() {
     }
 
     fun deleteProduct(productID : String){
-//        Toast.makeText(requireActivity(), "You can now delete the product. $productID", Toast.LENGTH_SHORT).show()
 
         showAlertDialogToDeleteProduct(productID)
     }
@@ -120,6 +125,7 @@ class ProductsFragment : BaseFragment() {
 
             FireStoreClass().deleteProduct(this,productID)
 
+            deleteonDatabase("prenda prueba")
             dialogInterface.dismiss()
         }
         builder.setNegativeButton(getString(R.string.no)){
@@ -131,4 +137,27 @@ class ProductsFragment : BaseFragment() {
         alertDialog.setCancelable(false)
         alertDialog.show()
     }
+
+    fun deleteonDatabase(productName : String){
+        val  rooturl = Constantes.URL
+        val url= rooturl+"eliminarP.php"
+        val queue: RequestQueue = Volley.newRequestQueue(requireActivity().applicationContext)
+        var resultadoPost = object : StringRequest(Request.Method.POST,url,
+            Response.Listener { response ->
+               Toast.makeText(requireActivity().applicationContext,"El produco se eliminó de la base de datos",Toast.LENGTH_LONG).show()
+            },
+            Response.ErrorListener { error ->
+                Toast.makeText(requireActivity().applicationContext,"Error al elminar el producto $error",Toast.LENGTH_LONG).show()
+            }
+        ){
+            override fun getParams(): MutableMap<String, String> {
+                val parametros=HashMap<String,String>()
+                parametros.put("nombre",productName)
+                return parametros
+            }
+        }
+        queue.add(resultadoPost)
+    }
+
+
 }

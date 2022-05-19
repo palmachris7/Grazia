@@ -200,6 +200,9 @@ class FireStoreClass {
             }
     }
 
+
+
+
     fun getDashboardItemsList(fragment: DashboardFragment) {
         mFireStore.collection(Constantes.PRODUCTOS)
             .get()

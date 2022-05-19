@@ -14,8 +14,7 @@ object Constantes {
     const val PRENDAS_CARRITOS : String = "prendas_carritos"
     const val ORDERS : String = "orden_prenda"
     const val SOLD_PRODUCT :String = "prendas_vendidas"
-
-
+    const val URL  ="https://e2a5-181-66-150-181.sa.ngrok.io/grazia/api/"
     const val MY_SHOP_PAL_PREFERENCES: String = "myShopPalPreferences"
     const val LOGGED_IN_USERNAME: String = "logged_in_user_name"
     const val EXTRA_USER_DETAILS: String = "extra_user_details"

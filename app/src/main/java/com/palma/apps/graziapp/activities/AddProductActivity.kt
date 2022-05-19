@@ -19,6 +19,12 @@ import com.palma.apps.graziapp.firestore.FireStoreClass
 import com.palma.apps.graziapp.modelos.Prenda
 import com.palma.apps.graziapp.utils.Constantes
 import com.palma.apps.graziapp.utils.GlideLoader
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.VolleyError
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
+import org.json.JSONObject
 
 class AddProductActivity : BaseActivity(), View.OnClickListener {
 
@@ -62,6 +68,7 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
                     if (validateProductDetails()){
                         uploadProductImage()
                     }
+                    clickBtnInsertar()
                 }
             }
         }
@@ -169,6 +176,33 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
         FireStoreClass().uploadProductDetails(this,productDetails)
 
     }
+
+    fun clickBtnInsertar(){
+
+        val  rooturl = Constantes.URL
+        val url= rooturl+"insertarP.php"
+        val queue= Volley.newRequestQueue(this)
+        var resultadoPost = object : StringRequest(Request.Method.POST,url,
+            Response.Listener<String> { response ->
+                Toast.makeText(this,"Producto insertado exitosamente",Toast.LENGTH_LONG).show()
+            },Response.ErrorListener { error ->
+                Toast.makeText(this,"Error $error ",Toast.LENGTH_LONG).show()
+            }){
+            override fun getParams(): MutableMap<String, String> {
+                val parametros=HashMap<String,String>()
+                parametros.put("idcategoria","1")
+                parametros.put("codigo",binding.etProductTitle.text.toString())
+                parametros.put("nombre",binding.etProductTitle.text.toString())
+                parametros.put("stock",binding.etProductQuantity.text.toString())
+                parametros.put("descripcion",binding.etProductDescription.text.toString())
+                parametros.put("imagen", "1652331319.png")
+                return parametros
+            }
+        }
+        queue.add(resultadoPost)
+    }
+
+
 
     override fun onDestroy() {
         dismissProgressDialog()
