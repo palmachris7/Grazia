@@ -7,7 +7,7 @@ import android.provider.MediaStore
 import android.webkit.MimeTypeMap
 
 object Constantes {
-
+    const val URL  ="https://e2a5-181-66-150-181.sa.ngrok.io/grazia/api/"
     /*Collections*/
     const val USUARIOS: String = "usuarios"
     const val PRODUCTOS : String = "prendas"

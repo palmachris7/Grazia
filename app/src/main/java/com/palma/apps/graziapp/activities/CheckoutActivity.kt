@@ -6,6 +6,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import com.palma.apps.graziapp.R
 import com.palma.apps.graziapp.activities.ui.adapters.ItemsCarritoListAdapter
 import com.palma.apps.graziapp.databinding.ActivityCheckoutBinding
@@ -154,7 +158,7 @@ class CheckoutActivity : BaseActivity() {
     fun allDetailsUpdatedSuccessfully(){
         hideProgressDialog()
         Toast.makeText(this, "Tu orden se realizó correctamente.", Toast.LENGTH_SHORT).show()
-
+     //   insertOnDatbase()
         val intent = Intent(this@CheckoutActivity,DashboardActivity::class.java)
         //to clear the stack of activities or layer of activities and open the dashboard activity
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
@@ -162,4 +166,28 @@ class CheckoutActivity : BaseActivity() {
         finish()
 
     }
+
+/*    fun insertOnDatbase(){
+
+        val  rooturl = Constantes.URL
+        val url= rooturl+"insertarV.php"
+        val queue= Volley.newRequestQueue(this)
+        var resultadoPost = object : StringRequest(
+            Request.Method.POST,url,
+            Response.Listener<String> { response ->
+                Toast.makeText(this,"Cliente insertado exitosamente",Toast.LENGTH_LONG).show()
+            }, Response.ErrorListener { error ->
+                Toast.makeText(this,"Error $error ",Toast.LENGTH_LONG).show()
+            }){
+            override fun getParams(): MutableMap<String, String> {
+                val parametros=HashMap<String,String>()
+                parametros.put("total_venta", mTotalAmount.toString())
+
+                return parametros
+            }
+        }
+        queue.add(resultadoPost)
+    }*/
+
+
 }
