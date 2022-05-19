@@ -2,6 +2,7 @@ package com.palma.apps.graziapp.activities
 
 import android.Manifest
 import android.app.Activity
+import android.app.ProgressDialog
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -19,6 +20,9 @@ import com.palma.apps.graziapp.firestore.FireStoreClass
 import com.palma.apps.graziapp.modelos.Prenda
 import com.palma.apps.graziapp.utils.Constantes
 import com.palma.apps.graziapp.utils.GlideLoader
+
+
+
 
 class AddProductActivity : BaseActivity(), View.OnClickListener {
 
@@ -168,7 +172,12 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
 
         FireStoreClass().uploadProductDetails(this,productDetails)
 
+
     }
+
+
+
+
 
     override fun onDestroy() {
         dismissProgressDialog()
