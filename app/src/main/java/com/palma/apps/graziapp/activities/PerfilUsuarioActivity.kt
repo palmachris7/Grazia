@@ -215,7 +215,7 @@ class PerfilUsuarioActivity : BaseActivity(), View.OnClickListener {
     }
 
 
-    fun insertOnDatbase(){
+    private fun insertOnDatbase(){
 
         val  rooturl = Constantes.URL
         val url= rooturl+"editarC.php"
