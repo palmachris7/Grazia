@@ -58,7 +58,7 @@ class RegistroActivity : BaseActivity() {
     private fun registerUser() {
         if (validateRegisterDetails()) {
             showProgressDialog(getString(R.string.txtEspere))
-
+            insertOnDatbase()
             val email: String = binding.etEmail.text.toString().trim { it <= ' ' }
             val password: String = binding.etPassword.text.toString().trim { it <= ' ' }
 
@@ -96,33 +96,33 @@ class RegistroActivity : BaseActivity() {
     private fun validateRegisterDetails(): Boolean {
         return when {
             TextUtils.isEmpty(binding.etFirstName.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar("Please enter first name.", true)
+                showErrorSnackBar("Ingrese nombre.", true)
                 false
             }
             TextUtils.isEmpty(binding.etLastName.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar("Please enter last name.", true)
+                showErrorSnackBar("Ingrese apellido.", true)
                 false
             }
             TextUtils.isEmpty(binding.etEmail.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar("Please enter an email id.", true)
+                showErrorSnackBar("Ingrese mail.", true)
                 false
             }
             TextUtils.isEmpty(binding.etPassword.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar("Please enter a password.", true)
+                showErrorSnackBar("Ingrese password.", true)
                 false
             }
             TextUtils.isEmpty(binding.etConfirmPassword.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar("Please enter confirm password.", true)
+                showErrorSnackBar("Confirme Contraseña.", true)
                 false
             }
             binding.etPassword.text.toString()
                 .trim { it <= ' ' } != binding.etConfirmPassword.text.toString()
                 .trim { it <= ' ' } -> {
-                showErrorSnackBar("Password and confirm password does not match", true)
+                showErrorSnackBar("Contraseñas no coinciden", true)
                 false
             }
             !binding.cbTermsAndCondition.isChecked -> {
-                showErrorSnackBar("Please agree terms and conditions.", true)
+                showErrorSnackBar("Acepte terminos y condiciones.", true)
                 false
             }
             else -> {
