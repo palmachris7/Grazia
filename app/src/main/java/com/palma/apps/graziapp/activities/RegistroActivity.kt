@@ -42,7 +42,6 @@ class RegistroActivity : BaseActivity() {
         }
         binding.btnRegister.setOnClickListener {
             registerUser()
-            insertOnDatbase()
         }
     }
 
