@@ -7,6 +7,10 @@ import android.text.TextUtils
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.Toast
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.palma.apps.graziapp.R
@@ -38,6 +42,7 @@ class RegistroActivity : BaseActivity() {
         }
         binding.btnRegister.setOnClickListener {
             registerUser()
+            insertOnDatbase()
         }
     }
 
@@ -91,33 +96,33 @@ class RegistroActivity : BaseActivity() {
     private fun validateRegisterDetails(): Boolean {
         return when {
             TextUtils.isEmpty(binding.etFirstName.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar("Please enter first name.", true)
+                showErrorSnackBar("Ingrese Nombre.", true)
                 false
             }
             TextUtils.isEmpty(binding.etLastName.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar("Please enter last name.", true)
+                showErrorSnackBar("Ingrese Apelllido.", true)
                 false
             }
             TextUtils.isEmpty(binding.etEmail.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar("Please enter an email id.", true)
+                showErrorSnackBar("Ingrese email.", true)
                 false
             }
             TextUtils.isEmpty(binding.etPassword.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar("Please enter a password.", true)
+                showErrorSnackBar("Ingrese contraseña.", true)
                 false
             }
             TextUtils.isEmpty(binding.etConfirmPassword.text.toString().trim { it <= ' ' }) -> {
-                showErrorSnackBar("Please enter confirm password.", true)
+                showErrorSnackBar("Confirme password.", true)
                 false
             }
             binding.etPassword.text.toString()
                 .trim { it <= ' ' } != binding.etConfirmPassword.text.toString()
                 .trim { it <= ' ' } -> {
-                showErrorSnackBar("Password and confirm password does not match", true)
+                showErrorSnackBar("Contraseñas no coinciden", true)
                 false
             }
             !binding.cbTermsAndCondition.isChecked -> {
-                showErrorSnackBar("Please agree terms and conditions.", true)
+                showErrorSnackBar("Acepte terminos y condiciones.", true)
                 false
             }
             else -> {
@@ -126,10 +131,31 @@ class RegistroActivity : BaseActivity() {
 
         }
     }
+    fun insertOnDatbase(){
+
+        val  rooturl = Constantes.URL
+        val url= rooturl+"insertarC.php"
+        val queue= Volley.newRequestQueue(this)
+        var resultadoPost = object : StringRequest(Request.Method.POST,url,
+            Response.Listener<String> { response ->
+                Toast.makeText(this,"Cliente insertado exitosamente",Toast.LENGTH_LONG).show()
+            }, Response.ErrorListener { error ->
+                Toast.makeText(this,"Error $error ",Toast.LENGTH_LONG).show()
+            }){
+            override fun getParams(): MutableMap<String, String> {
+                val parametros=HashMap<String,String>()
+                parametros.put("nombre",binding.etFirstName.text.toString()+binding.etLastName.text.toString())
+                parametros.put("email",binding.etEmail.text.toString())
+                return parametros
+            }
+        }
+        queue.add(resultadoPost)
+    }
+
 
     fun userRegistrationSuccess() {
         hideProgressDialog()
-        Toast.makeText(this@RegistroActivity, "You are registered successfully", Toast.LENGTH_SHORT)
+        Toast.makeText(this@RegistroActivity, "Registrado Correctamente", Toast.LENGTH_SHORT)
             .show()
     }
 

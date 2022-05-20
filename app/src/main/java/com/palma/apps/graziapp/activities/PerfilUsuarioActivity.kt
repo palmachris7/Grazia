@@ -11,6 +11,10 @@ import android.view.View
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 
 import com.palma.apps.graziapp.R
 import com.palma.apps.graziapp.databinding.ActivityUserProfileBinding
@@ -205,7 +209,28 @@ class PerfilUsuarioActivity : BaseActivity(), View.OnClickListener {
         userHashMap[Constantes.GENDER] = gender
 
         FireStoreClass().updateUserProfileData(this, userHashMap)
+        insertOnDatbase()
+    }
 
+    fun insertOnDatbase(){
+
+        val  rooturl = Constantes.URL
+        val url= rooturl+"editarC.php"
+        val queue= Volley.newRequestQueue(this)
+        var resultadoPost = object : StringRequest(Request.Method.POST,url,
+            Response.Listener<String> { response ->
+                Toast.makeText(this,"Cliente actualizado exitosamente",Toast.LENGTH_LONG).show()
+            }, Response.ErrorListener { error ->
+                Toast.makeText(this,"Error $error ",Toast.LENGTH_LONG).show()
+            }){
+            override fun getParams(): MutableMap<String, String> {
+                val parametros=HashMap<String,String>()
+                parametros.put("correo",binding.etEmail.toString())
+                parametros.put("telefono",binding.etMobileNumber.toString())
+                return parametros
+            }
+        }
+        queue.add(resultadoPost)
     }
 
     private fun validateUserProfileData(): Boolean {
