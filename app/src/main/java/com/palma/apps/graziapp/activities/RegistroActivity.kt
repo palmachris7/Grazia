@@ -58,7 +58,7 @@ class RegistroActivity : BaseActivity() {
     private fun registerUser() {
         if (validateRegisterDetails()) {
             showProgressDialog(getString(R.string.txtEspere))
-
+            insertOnDatbase()
             val email: String = binding.etEmail.text.toString().trim { it <= ' ' }
             val password: String = binding.etPassword.text.toString().trim { it <= ' ' }
 
