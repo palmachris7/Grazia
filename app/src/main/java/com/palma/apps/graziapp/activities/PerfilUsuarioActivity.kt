@@ -228,7 +228,7 @@ class PerfilUsuarioActivity : BaseActivity(), View.OnClickListener {
             }){
             override fun getParams(): MutableMap<String, String> {
                 val parametros=HashMap<String,String>()
-                parametros.put("nombre",binding.etFirstName.text.toString()+binding.etLastName.text.toString())
+                parametros.put("email",binding.etEmail.toString())
                 parametros.put("telefono",binding.etMobileNumber.toString())
                 return parametros
             }
