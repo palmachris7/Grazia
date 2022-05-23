@@ -190,7 +190,7 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
             override fun getParams(): MutableMap<String, String> {
                 val parametros=HashMap<String,String>()
                 parametros.put("idcategoria","1")
-                parametros.put("codigo",binding.etProductTitle.text.toString())
+                parametros.put("codigo","app_movil")
                 parametros.put("nombre",binding.etProductTitle.text.toString())
                 parametros.put("stock",binding.etProductQuantity.text.toString())
                 parametros.put("descripcion",binding.etProductDescription.text.toString())
