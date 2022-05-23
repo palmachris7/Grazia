@@ -21,10 +21,8 @@ import com.palma.apps.graziapp.utils.Constantes
 import com.palma.apps.graziapp.utils.GlideLoader
 import com.android.volley.Request
 import com.android.volley.Response
-import com.android.volley.VolleyError
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import org.json.JSONObject
 
 class AddProductActivity : BaseActivity(), View.OnClickListener {
 
@@ -68,6 +66,7 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
                     if (validateProductDetails()){
                         uploadProductImage()
                     }
+                    //Inserta al mysql
                     clickBtnInsertar()
                 }
             }
@@ -159,7 +158,7 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
 
     private fun uploadProductDetails(){
 
-        val shared = getSharedPreferences(Constantes.MY_SHOP_PAL_PREFERENCES,Context.MODE_PRIVATE)
+        val shared = getSharedPreferences(Constantes.GRAZIA_PREFERENCES,Context.MODE_PRIVATE)
         val userName = shared.getString(Constantes.LOGGED_IN_USERNAME,"")
 
 

@@ -72,7 +72,7 @@ class ProductsFragment : BaseFragment() {
     private fun getProductListFromFirestore(){
 
 //        showProgressDialog(getString(R.string.txtEspere))
-
+//Parece que no funciona
         binding.shimmerViewContainer.startShimmerAnimation()
 
         FireStoreClass().getProductList(this)
@@ -94,6 +94,7 @@ class ProductsFragment : BaseFragment() {
             binding.rvMyProductsItems.visibility = View.GONE
             binding.tvNoProductsFound.visibility = View.VISIBLE
         }
+
     }
     fun productDeleteSuccess(){
         hideProgressDialog()
@@ -124,7 +125,6 @@ class ProductsFragment : BaseFragment() {
             showProgressDialog(getString(R.string.txtEspere))
 
             FireStoreClass().deleteProduct(this,productID)
-
             deleteonDatabase("prenda prueba")
             dialogInterface.dismiss()
         }
@@ -153,6 +153,7 @@ class ProductsFragment : BaseFragment() {
             override fun getParams(): MutableMap<String, String> {
                 val parametros=HashMap<String,String>()
                 parametros.put("nombre",productName)
+
                 return parametros
             }
         }

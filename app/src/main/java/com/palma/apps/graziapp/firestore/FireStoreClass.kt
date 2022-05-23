@@ -56,7 +56,7 @@ class FireStoreClass {
                 if (user != null) {
 
                     val sharedPref = activity.getSharedPreferences(
-                        Constantes.MY_SHOP_PAL_PREFERENCES,
+                        Constantes.GRAZIA_PREFERENCES,
                         Context.MODE_PRIVATE
                     )
 
