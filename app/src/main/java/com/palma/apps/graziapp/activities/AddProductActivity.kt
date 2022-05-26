@@ -194,7 +194,7 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
                 parametros.put("nombre",binding.etProductTitle.text.toString())
                 parametros.put("stock",binding.etProductQuantity.text.toString())
                 parametros.put("descripcion",binding.etProductDescription.text.toString())
-                parametros.put("imagen", "1652331319.png")
+                parametros.put("imagen", "1653278679.png")
                 return parametros
             }
         }

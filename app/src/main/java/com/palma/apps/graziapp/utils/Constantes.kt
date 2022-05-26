@@ -8,13 +8,17 @@ import android.webkit.MimeTypeMap
 
 object Constantes {
 
-    /*Collections*/
+
+    const val URL  ="https://twenty-tigers-drop-181-66-150-181.loca.lt/grazia/api/"
+
+
     const val USUARIOS: String = "usuarios"
     const val PRODUCTOS : String = "prendas"
     const val PRENDAS_CARRITOS : String = "prendas_carritos"
     const val ORDERS : String = "orden_prenda"
     const val SOLD_PRODUCT :String = "prendas_vendidas"
-    const val URL  ="https://cute-grapes-leave-181-66-150-181.loca.lt/grazia/api/"
+
+
     const val GRAZIA_PREFERENCES: String = "GraziaPreferences"
     const val LOGGED_IN_USERNAME: String = "logged_in_user_name"
     const val EXTRA_USER_DETAILS: String = "extra_user_details"
