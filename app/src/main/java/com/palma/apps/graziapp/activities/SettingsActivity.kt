@@ -4,6 +4,7 @@ package com.palma.apps.graziapp.activities
 import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import com.google.firebase.auth.FirebaseAuth
@@ -27,6 +28,7 @@ class SettingsActivity : BaseActivity(), View.OnClickListener {
         binding.btnLogout.setOnClickListener(this)
         binding.tvEdit.setOnClickListener(this)
         binding.llAddress.setOnClickListener(this)
+        binding.btnAyuda.setOnClickListener(this)
 
     }
 
@@ -93,14 +95,38 @@ class SettingsActivity : BaseActivity(), View.OnClickListener {
                 R.id.btn_logout-> alertDialogLogout()
                 R.id.tv_edit->{
                     val intent = Intent(this@SettingsActivity,PerfilUsuarioActivity::class.java)
-                    intent.putExtra(Constantes.EXTRA_USER_DETAILS,mUserDetails)
+                    intent.putExtra(Constantes.EXTRA_USER_DETALLES,mUserDetails)
                     startActivity(intent)
                 }
                 R.id.ll_address->{
                     startActivity(Intent(this@SettingsActivity,AddressListActivity::class.java))
                 }
+                R.id.btn_ayuda -> helpdialog()
             }
 
         }
+    }
+
+    private fun helpdialog() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle(getString(R.string.app_name))
+        builder.setMessage("Se pondra en contacto con un asesor de la empresa"+ "\n" +"Desea continuar?")
+
+        builder.setIcon(android.R.drawable.ic_dialog_alert)
+        builder.setPositiveButton("Si") { dialogInterface, _ ->
+            dialogInterface.dismiss()
+
+            val url = "https://api.whatsapp.com/send/?phone=51916884456&text=Quisiera+recibir+ayuda+referida+a+la+aplicacion+Grazia&app_absent=0"
+            val i = Intent(Intent.ACTION_VIEW)
+            i.data = Uri.parse(url)
+            startActivity(i)
+            finish()
+        }
+        builder.setNegativeButton("No") { dialogInterface, _ ->
+            dialogInterface.dismiss()
+        }
+        val alertDialog: AlertDialog = builder.create()
+        alertDialog.setCancelable(false)
+        alertDialog.show()
     }
 }

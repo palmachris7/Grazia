@@ -360,7 +360,7 @@ class FireStoreClass {
     }
 
     fun addAddress(activity: AddEditAddressActivity, direccionInfo: Direccion) {
-        mFireStore.collection(Constantes.ADDRESSES)
+        mFireStore.collection(Constantes.DIRECCIONES)
             .document()
             .set(direccionInfo, SetOptions.merge())
             .addOnSuccessListener {
@@ -373,7 +373,7 @@ class FireStoreClass {
     }
 
     fun getAddressList(activity: AddressListActivity) {
-        mFireStore.collection(Constantes.ADDRESSES)
+        mFireStore.collection(Constantes.DIRECCIONES)
             .whereEqualTo(Constantes.USER_ID, getCurrentUserId())
             .get()
             .addOnSuccessListener { document ->
@@ -400,7 +400,7 @@ class FireStoreClass {
         direccionInfo: Direccion,
         addressId: String
     ) {
-        mFireStore.collection(Constantes.ADDRESSES)
+        mFireStore.collection(Constantes.DIRECCIONES)
             .document(addressId)
             .set(direccionInfo, SetOptions.merge())
             .addOnSuccessListener {
@@ -414,7 +414,7 @@ class FireStoreClass {
     }
 
     fun deleteAddress(activity: AddressListActivity, addressId: String) {
-        mFireStore.collection(Constantes.ADDRESSES)
+        mFireStore.collection(Constantes.DIRECCIONES)
             .document(addressId)
             .delete()
             .addOnSuccessListener {
@@ -447,7 +447,7 @@ class FireStoreClass {
 
                    val productHashMap = HashMap<String,Any>()
                    //actualizar stock
-                   productHashMap[Constantes.STOCK_QUANTITY] =
+                   productHashMap[Constantes.STOCK_CANTIDAD] =
                        (cartItem.stock_quantity.toInt() - cartItem.cart_quantity.toInt()).toString()
 
                    //Productos

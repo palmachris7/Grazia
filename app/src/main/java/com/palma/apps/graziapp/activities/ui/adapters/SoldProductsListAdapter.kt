@@ -4,7 +4,6 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.palma.apps.graziapp.R
@@ -49,7 +48,7 @@ open class SoldProductsListAdapter(
 
         holder.itemView.setOnClickListener{
             val intent = Intent(context,SoldProductDetailsActivity::class.java)
-            intent.putExtra(Constantes.EXTRA_SOLD_PRODUCT_DETAILS,model)
+            intent.putExtra(Constantes.EXTRA_PRODUCTOS_VENDIDOS,model)
             context.startActivity(intent)
         }
     }

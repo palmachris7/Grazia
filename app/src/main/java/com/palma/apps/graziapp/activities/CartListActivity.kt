@@ -6,6 +6,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import com.palma.apps.graziapp.R
 import com.palma.apps.graziapp.activities.ui.adapters.ItemsCarritoListAdapter
 import com.palma.apps.graziapp.databinding.ActivityCartListBinding
@@ -13,12 +17,16 @@ import com.palma.apps.graziapp.databinding.ActivityCartListBinding
 import com.palma.apps.graziapp.firestore.FireStoreClass
 import com.palma.apps.graziapp.modelos.Carrito
 import com.palma.apps.graziapp.modelos.Prenda
+import com.palma.apps.graziapp.modelos.User
 import com.palma.apps.graziapp.utils.Constantes
+import kotlin.properties.Delegates
 
 class CartListActivity : BaseActivity() {
+    private var totale: Double? = null
     private lateinit var binding : ActivityCartListBinding
     private lateinit var mPrendaList : ArrayList<Prenda>
     private lateinit var mCarrito : ArrayList<Carrito>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCartListBinding.inflate(layoutInflater)
@@ -30,6 +38,7 @@ class CartListActivity : BaseActivity() {
             val intent = Intent(this@CartListActivity,AddressListActivity::class.java)
             intent.putExtra(Constantes.EXTRA_SELECT_DIRECCION,true)
             startActivity(intent)
+           // insertOnDatbase()
         }
     }
     private fun setUpActionBar(){
@@ -130,7 +139,7 @@ class CartListActivity : BaseActivity() {
                 binding.llCheckout.visibility = View.VISIBLE
 
                 val total = subTotal + 10
-
+                totale=total
                 binding.tvTotalAmount.text = "S/.${total}"
             }else{
                 binding.llCheckout.visibility = View.GONE
@@ -140,6 +149,33 @@ class CartListActivity : BaseActivity() {
             binding.llCheckout.visibility = View.GONE
             binding.rvCartItemsList.visibility = View.GONE
         }
+    }
+
+/*    //Guardar en mysql
+    fun insertOnDatbase(){
+        val  rooturl = Constantes.URL
+        val url= rooturl+"insertarV.php"
+        val queue= Volley.newRequestQueue(this)
+        var resultadoPost = object : StringRequest(Request.Method.POST,url,
+            Response.Listener<String> { response ->
+                Toast.makeText(this,"Venta insertada exitosamente",Toast.LENGTH_LONG).show()
+            }, Response.ErrorListener { error ->
+                Toast.makeText(this,"Error $error ",Toast.LENGTH_LONG).show()
+            }){
+            override fun getParams(): MutableMap<String, String> {
+                val parametros=HashMap<String,String>()
+                parametros.put("total_venta",totale.toString())
+                return parametros
+            }
+        }
+        queue.add(resultadoPost)
+    }*/
+
+    //Enviar Mensaje
+    fun enviarmensaje(){
+
+
+
     }
 
     //Prenda traida de firebase
@@ -163,7 +199,6 @@ class CartListActivity : BaseActivity() {
     fun itemRemoveSuccess(){
         hideProgressDialog()
         Toast.makeText(this, getString(R.string.msg_item_removed_successfully), Toast.LENGTH_SHORT).show()
-
         getCartItemList()
     }
 

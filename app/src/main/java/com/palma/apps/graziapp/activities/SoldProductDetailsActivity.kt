@@ -22,8 +22,8 @@ class SoldProductDetailsActivity : AppCompatActivity() {
 
         setUpActionBar()
 
-        if (intent.hasExtra(Constantes.EXTRA_SOLD_PRODUCT_DETAILS)){
-            mVendidosDetails = intent.getParcelableExtra(Constantes.EXTRA_SOLD_PRODUCT_DETAILS)
+        if (intent.hasExtra(Constantes.EXTRA_PRODUCTOS_VENDIDOS)){
+            mVendidosDetails = intent.getParcelableExtra(Constantes.EXTRA_PRODUCTOS_VENDIDOS)
             setUpUI(mVendidosDetails!!)
         }
     }

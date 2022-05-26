@@ -37,8 +37,8 @@ class CheckoutActivity : BaseActivity() {
 
         setUpActionBar()
 
-        if (intent.hasExtra(Constantes.EXTRA_SELECTED_ADDRESS)) {
-            mSelectedDireccionDetails = intent.getParcelableExtra(Constantes.EXTRA_SELECTED_ADDRESS)
+        if (intent.hasExtra(Constantes.EXTRA_DIRECCION_SELECCIONADA)) {
+            mSelectedDireccionDetails = intent.getParcelableExtra(Constantes.EXTRA_DIRECCION_SELECCIONADA)
         }
         if (mSelectedDireccionDetails != null) {
             binding.tvCheckoutAddress.text =
@@ -156,6 +156,7 @@ class CheckoutActivity : BaseActivity() {
 
     }
     fun allDetailsUpdatedSuccessfully(){
+        insertOnDatbase()
         hideProgressDialog()
         Toast.makeText(this, "Tu orden se realizó correctamente.", Toast.LENGTH_SHORT).show()
      //   insertOnDatbase()
@@ -167,27 +168,24 @@ class CheckoutActivity : BaseActivity() {
 
     }
 
-/*    fun insertOnDatbase(){
-
+    //Guardar en mysql
+    fun insertOnDatbase(){
         val  rooturl = Constantes.URL
         val url= rooturl+"insertarV.php"
         val queue= Volley.newRequestQueue(this)
-        var resultadoPost = object : StringRequest(
-            Request.Method.POST,url,
+        var resultadoPost = object : StringRequest(Request.Method.POST,url,
             Response.Listener<String> { response ->
-                Toast.makeText(this,"Cliente insertado exitosamente",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Venta insertada exitosamente",Toast.LENGTH_LONG).show()
             }, Response.ErrorListener { error ->
                 Toast.makeText(this,"Error $error ",Toast.LENGTH_LONG).show()
             }){
             override fun getParams(): MutableMap<String, String> {
                 val parametros=HashMap<String,String>()
-                parametros.put("total_venta", mTotalAmount.toString())
-
+                parametros.put("total_venta",mTotalAmount.toString())
                 return parametros
             }
         }
         queue.add(resultadoPost)
-    }*/
-
+    }
 
 }

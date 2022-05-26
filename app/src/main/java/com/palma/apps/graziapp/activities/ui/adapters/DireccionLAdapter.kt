@@ -35,7 +35,7 @@ class DireccionLAdapter (private val context: Context,
         if (mSelectedAddress){
             holder.itemView.setOnClickListener{
                 val intent = Intent(context,CheckoutActivity::class.java)
-                intent.putExtra(Constantes.EXTRA_SELECTED_ADDRESS,model)
+                intent.putExtra(Constantes.EXTRA_DIRECCION_SELECCIONADA,model)
                 context.startActivity(intent)
             }
         }

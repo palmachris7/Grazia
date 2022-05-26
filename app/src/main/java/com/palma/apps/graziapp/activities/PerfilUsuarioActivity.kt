@@ -35,8 +35,8 @@ class PerfilUsuarioActivity : BaseActivity(), View.OnClickListener {
         setContentView(binding.root)
 
 
-        if (intent.hasExtra(Constantes.EXTRA_USER_DETAILS)) {
-            mUserDetails = intent.getParcelableExtra(Constantes.EXTRA_USER_DETAILS)!!
+        if (intent.hasExtra(Constantes.EXTRA_USER_DETALLES)) {
+            mUserDetails = intent.getParcelableExtra(Constantes.EXTRA_USER_DETALLES)!!
 
             binding.etFirstName.setText(mUserDetails.firstName)
             binding.etLastName.setText(mUserDetails.lastName)
@@ -209,11 +209,11 @@ class PerfilUsuarioActivity : BaseActivity(), View.OnClickListener {
         userHashMap[Constantes.GENDER] = gender
 
         FireStoreClass().updateUserProfileData(this, userHashMap)
-        insertOnDatbase()
+        insertOnDatbase(User())
     }
 
-    fun insertOnDatbase(){
-
+    fun insertOnDatbase(user:User){
+        mUserDetails = user
         val  rooturl = Constantes.URL
         val url= rooturl+"editarC.php"
         val queue= Volley.newRequestQueue(this)
@@ -225,7 +225,7 @@ class PerfilUsuarioActivity : BaseActivity(), View.OnClickListener {
             }){
             override fun getParams(): MutableMap<String, String> {
                 val parametros=HashMap<String,String>()
-                parametros.put("email",binding.etEmail.toString())
+                parametros.put("email",user.email)
                 parametros.put("telefono",binding.etMobileNumber.toString())
                 return parametros
             }

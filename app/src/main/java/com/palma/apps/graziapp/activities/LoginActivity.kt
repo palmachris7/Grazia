@@ -7,7 +7,6 @@ import android.text.TextUtils
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
-import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.palma.apps.graziapp.R
 import com.palma.apps.graziapp.databinding.ActivityLoginBinding
@@ -107,7 +106,7 @@ class LoginActivity : BaseActivity() , View.OnClickListener {
             val intent = Intent(this@LoginActivity, PerfilUsuarioActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK
-            intent.putExtra(Constantes.EXTRA_USER_DETAILS,user)
+            intent.putExtra(Constantes.EXTRA_USER_DETALLES,user)
             startActivity(intent)
         }else{
             val intent = Intent(this@LoginActivity, DashboardActivity::class.java)

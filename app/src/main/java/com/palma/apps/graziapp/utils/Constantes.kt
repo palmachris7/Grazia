@@ -7,7 +7,8 @@ import android.provider.MediaStore
 import android.webkit.MimeTypeMap
 
 object Constantes {
-    const val URL  ="https://e2a5-181-66-150-181.sa.ngrok.io/grazia/api/"
+    //cambiar cada que se levanta la app
+    const val URL  ="https://tiny-mammals-reply-181-66-150-181.loca.lt/grazia/api/"
     /*Collections*/
     const val USUARIOS: String = "usuarios"
     const val PRODUCTOS : String = "prendas"
@@ -18,7 +19,7 @@ object Constantes {
 
     const val GRAZIA_PREFERENCES: String = "Grazia"
     const val LOGGED_IN_USERNAME: String = "logged_in_user_name"
-    const val EXTRA_USER_DETAILS: String = "extra_user_details"
+    const val EXTRA_USER_DETALLES: String = "extra_user_details"
     const val EXTRA_ADDRESS_DETAILS: String = "extra_address_details"
 
     const val MALE: String = "Mujer"
@@ -53,19 +54,19 @@ object Constantes {
     const val OFFICE : String = "Oficina"
     const val OTHER : String = "Otros"
 
-    const val ADDRESSES : String = "direccion"
+    const val DIRECCIONES : String = "direccion"
 
     const val EXTRA_SELECT_DIRECCION : String = "extra_select_address"
     const val ADD_ADDRESS_REQUEST_CODE : Int = 121
 
-    const val EXTRA_SELECTED_ADDRESS : String = "extra_selected_address"
+    const val EXTRA_DIRECCION_SELECCIONADA : String = "extra_selected_address"
 
-    const val STOCK_QUANTITY : String = "stock_quantity"
+    const val STOCK_CANTIDAD : String = "stock_quantity"
 
     const val DETALLES_EXTRA_ORDEN : String = "extra_my_order_details"
 
 
-    const val EXTRA_SOLD_PRODUCT_DETAILS : String = "extra_sold_product_details"
+    const val EXTRA_PRODUCTOS_VENDIDOS : String = "extra_sold_product_details"
 
 
     fun showImageChooser(activity: Activity) {

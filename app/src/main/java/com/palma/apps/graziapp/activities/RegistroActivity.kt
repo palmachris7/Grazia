@@ -20,6 +20,7 @@ import com.palma.apps.graziapp.modelos.User
 import com.palma.apps.graziapp.utils.Constantes
 
 class RegistroActivity : BaseActivity() {
+
     private lateinit var binding: ActivityRegistroBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -162,7 +163,7 @@ class RegistroActivity : BaseActivity() {
         hideProgressDialog()
         val intent = Intent(this@RegistroActivity, PerfilUsuarioActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-        intent.putExtra(Constantes.EXTRA_USER_DETAILS, user)
+        intent.putExtra(Constantes.EXTRA_USER_DETALLES, user)
         startActivity(intent)
         finish()
     }
