@@ -8,7 +8,7 @@ import android.webkit.MimeTypeMap
 
 object Constantes {
     //cambiar cada que se levanta la app
-    const val URL  ="https://tiny-mammals-reply-181-66-150-181.loca.lt/grazia/api/"
+    const val URL  ="https://twenty-tigers-drop-181-66-150-181.loca.lt/grazia/api/"
     /*Collections*/
     const val USUARIOS: String = "usuarios"
     const val PRODUCTOS : String = "prendas"
